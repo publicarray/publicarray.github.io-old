@@ -15,7 +15,7 @@ I believe websites should be fast for everyone, simple, secure and not evade the
 Some of my open sourced projects:
 - [Real-time-CRUD](https://github.com/publicarray/Real-time-CRUD)
 - [Solar System](https://github.com/publicarray/solarsystem)
-- [My Dotfiles](https://github.com/publicarray/dotfile)
+- [My Dotfiles](https://github.com/publicarray/dotfiles)
 
 <br>
 Open source projects I contributed to:
