@@ -22,6 +22,7 @@ social:
 
 # Important settings (change at own risk)
 
+asset_path: assets
 assets:
   compress:
     css: true
