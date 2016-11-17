@@ -1,3 +1,11 @@
 _site/
 .sass-cache/
+.asset-cache/
+_assets/bower/
 .jekyll-metadata
+
+# Default posts
+_posts/2016-10-17-introducing-chalk.md
+_posts/2016-10-16-configuring-chalk.md
+_posts/2016-10-15-chalk-sample-post-with-all-elements.md
+_assets/images/documentation/
