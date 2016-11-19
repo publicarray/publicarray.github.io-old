@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "About me"
-description: ""
+description: "Hi, I'm Sebastian, an Australian developer fresh out of University who is interested in information security and open-source software."
 ---
 
 <!-- <img src="{% asset_path 'about.jpg' %}" alt="About Nielsen Ramon header image" /> -->
