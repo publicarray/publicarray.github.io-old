@@ -5,8 +5,6 @@
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
-
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -20,16 +18,13 @@
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path apple-touch-icon.png %}{% endif %}">
 
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <base href='{{ site.url }}'>
+  <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{base}}/assets/apple-touch-icon.png">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
-  {% if site.blog_theme == "light" %}
-    {% stylesheet light %}
-  {% else %}
-    {% stylesheet dark %}
-  {% endif %}
-
-  {% javascript reveal %}
+  <link href='{{base}}/assets/{{site.blog_theme}}.css' rel='stylesheet'>
+  <script src='{{base}}/assets/reveal.js'></script>
   <script>
     window.sr = ScrollReveal();
     // Add class to <html> if ScrollReveal is supported
