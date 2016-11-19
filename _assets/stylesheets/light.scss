@@ -17,11 +17,15 @@ $gray-lighter: lighten($gray-darkest, 75);
 $gray-lightest: lighten($gray-darkest, 85);
 $white: #fff;
 
+// Brand color
+
+$brand: #4B77F1;
+
 // Font colors
 
 $base-font-color: $gray-dark;
 $base-accent-color: $gray-dark;
-$base-accent-highlighted-color: darken($base-accent-color, 15);
+$base-accent-highlighted-color: $brand; //darken($base-accent-color, 15);
 
 // Border color
 
@@ -32,14 +36,15 @@ $base-border-color: $gray-lightest;
 $body-background: $white;
 $header-logo-color: $black;
 $header-link-color: $gray-darker;
-$header-link-color-hover: $gray-darkest;
+$header-link-color-hover: $brand;
 $article-header-title-color: $gray-darkest;
 $article-header-description-color: $gray-dark;
 $article-post-titles-color: $gray-darkest;
 $article-footer-color: $gray-light;
 $article-footer-link-color: $gray-dark;
-$article-footer-link-color-hover: $gray-darkest;
+$article-footer-link-color-hover: $brand;
 $article-paginator-color-hover: $gray-darkest;
+$footer-link-color-hover: $brand;
 
 // Imports
 // =============================================================================

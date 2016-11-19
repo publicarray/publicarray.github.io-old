@@ -4,21 +4,26 @@
 
 .header-nav {
   display: block;
-  padding: 75px 0 20px;
+  // padding: 75px 0 20px;
+  padding: 0 1em;
   border-bottom: 1px solid $base-border-color;
 }
 
 .header-logo {
+  margin: 0 1em 0 0;
   display: inline-block;
   font-family: $serif;
   font-size: 36px;
   font-weight: 900;
   color: $header-logo-color;
   text-decoration: none;
+  &:hover {
+    color: $header-link-color-hover;
+  }
 }
 
-.header-links {
-  float: right;
+.header-links, .social-links {
+  display: inline-block;
   padding: 0;
   margin: 15px 0 0;
   list-style: none;
@@ -32,6 +37,8 @@
     a {
       font-size: 18px;
       color: $header-link-color;
+      text-decoration: none;
+      padding: 15px 0;
       &:hover {
         color: $header-link-color-hover;
       }
@@ -39,11 +46,15 @@
   }
 }
 
+.social-links {
+  float: right;
+}
+
 @include breakpoint(extra-small) {
   .header-nav {
     text-align: center;
   }
-  .header-links {
+  .header-links, .social-links {
     display: block;
     float: none;
     text-align: center;

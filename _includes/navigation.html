@@ -1,6 +1,11 @@
-<nav class="header-nav reveal">
+<nav class="header-nav">
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
   <ul class="header-links">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'navigation' %}
+    {% include pages_list.html %}
+  </ul>
+  <ul class="social-links">
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" title="Twitter">
