@@ -2,5 +2,5 @@
 layout: page
 title: "Résumé"
 description: ""
-group: "navigation"
+# group: "navigation"
 ---

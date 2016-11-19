@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Projects"
-description: ""
+description: "Here is a selected list of projects that I have worked on."
 group: "navigation"
 ---
 
-### [Solar System](https://publicarray.github.io/solarsystem/)
+## [Solar System](https://publicarray.github.io/solarsystem/)
 
 September 2015
 
@@ -13,13 +13,13 @@ The aim was to teach kids and teenagers about the solar system. The learning obj
 
 See the slides for More info: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
 
-#### Technologies:
+### Technologies:
 
 * [Jekyll](https://jekyllrb.com/)
 * [WebGl](https://en.wikipedia.org/wiki/WebGL) with [gooengine.js](https://github.com/GooTechnologies/goojs) and [goocreate.com](https://goocreate.com/)
 * [git](https://git-scm.com/) with [Github](https://github.com/) and [Github Pages](https://pages.github.com/)
 
-### [Work Integrated Learning](https://workintegratedlearing.azurewebsites.net/)
+## [Work Integrated Learning](https://workintegratedlearing.azurewebsites.net/)
 
 June 2016
 
@@ -27,7 +27,7 @@ Work Integrated Learing (WIL) is a program designed to integrate final year, und
 
 I was the backend programmer and system administrator during the development of the site.
 
-#### Technologies:
+### Technologies:
 * [Laravel](https://laravel.com/) 5.2 (laravel-debugbar, maatwebsite/excel, laracasts/generators, ...)
 * [Rocketeer](http://rocketeer.autopergamene.eu/) (a deployment tool)
 * [Digital Ocean](https://www.digitalocean.com/) (Debian jessie, php 7, MySql, apache2)

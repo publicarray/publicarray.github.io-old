@@ -124,9 +124,8 @@
 // Article page
 // =============================================================================
 
-.article-header {
+.article-header, .page-header {
   display: block;
-  padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid $base-border-color;
   p {
@@ -137,6 +136,17 @@
   }
   a {
     text-decoration: none;
+  }
+}
+
+.article-header {
+  padding-bottom: 30px;
+}
+
+.page-header {
+  text-align: center;
+  h1 {
+    font-family: $serif;
   }
 }
 
