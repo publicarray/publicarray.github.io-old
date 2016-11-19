@@ -3,7 +3,8 @@
 name: Sebastian Schmidt
 paginate: 25
 paginate_path: "/blog/posts/page/:num/"
-url: # add site url http://example.com/
+url: https://sebastian-schmidt.me
+canonical: https://sebastian-schmidt.me
 blog_theme: light # Or use dark
 
 # Optional settings
