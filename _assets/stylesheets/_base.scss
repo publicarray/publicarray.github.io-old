@@ -17,6 +17,7 @@ html {
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
   font-family: $base-font-family;
   // -webkit-font-smoothing: antialiased;
   font-weight: $base-font-weight;
