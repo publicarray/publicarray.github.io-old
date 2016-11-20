@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/publicarray
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sebastian-schmidt.me
+  * I am publicarray (https://keybase.io/publicarray) on keybase.
+  * I have a public key with fingerprint AC7B 7A03 D00D 8236 B8E6  F9D1 80B9 6879 01B6 587C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01202ca9b5f0f0ba6734ccc7a82443e6ada7084868eac225d13c2db225664b0cc7480a",
+            "fingerprint": "ac7b7a03d00d8236b8e6f9d180b9687901b6587c",
+            "host": "keybase.io",
+            "key_id": "80b9687901b6587c",
+            "kid": "0101cda6190e5cc6af5609d6925f800a2a61db0222cad89c69bf02a3542de159002d0a",
+            "uid": "338300efa4765b844cb04fd48f8b1219",
+            "username": "publicarray"
+        },
+        "service": {
+            "hostname": "sebastian-schmidt.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1479600722,
+    "expire_in": 157680000,
+    "prev": "140d7ae5bad78cc35eaa0f27d2d1ed4947dffe307dd30b654baa227b1b342f1f",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMN3AnicbVJrUFVVGL2Xh0wIqNFMiQ7I4VkB7fM+h0xNyxwcq/EB+Bho77P34R7h
+ProvQURRVJpEJzUVkhrIB0FxhwYkCMF4F1IzERp/xIEhhkBhClIap+xcRv/1a+/9
+fWutvdY3X1ewryHQWNhsyjM2ph8w3my/5DKkg8mt+RSy4jwqOZ/KJgsHycHE4czM
+1jCVTAGaAYwCZcSrQAUICiLLKYoiQonhOJYIEEMRSJwkSAQqDMNjmlUYjPSbIHAI
+6EhOApBKoFTNkkXsNrtmceqyUBGRCAGLAcASwwpIIoIqY1oCSBYkUQY0EnhJVHSi
+yerwMnRzCDpIkmbVa/ojc8He/+Cf+ga0gqFAy4DwiiJAlReAjAWZ4VUJAMjoLYwA
+w+jhsCQrgoxUwECW5xhMaF4GgMELvl0LciwrsQAQFXKiwCOJ4xQEOBVzkiohmqFl
+L9BB7BZoJjra5kI5mgLtdphHFSRQesOtKcQ7W2+YJyAH0fM4NWhJdCgms4adSXo5
+gbLZrU6rYs3RESan0+ZI9io482xeyj6CMp+IZSLNgvWR6gw3sTs0q4VKpnWk4tS8
+6jQnygIAIsMkUCTXptlJpuZF8KKgpwfA+w9x65I0B7AICY8gFiVFYXkCIVAZETOY
+JpiTORGrKmGBiDEL9BlzCEKGERGNWI5RaZXyxnvfYtW1dVEnzPIm07Is0OmyE6qg
+o32Pn8EYaFjk7+PdNUPgM0ufbiB/banhUmnR7jv8QO+S6KLy2g/9mwuMDWufT5rz
+7L3Q+crvQRdHz16u0Aaf64318/xmSLlsc483bzz7+oSn7mSFuWXx6N6GipXLrmd0
+1L9o6rr2NX3959nS2Ptf/S32Her2X/5w6NczcWxlQC6ICA8u2jP4wXDisrD6zwdS
+4ktno4aqa0deHb/deuPUEHrY/mNoyqjQ2t9WtLk37mqSyZwX8ca672M//WxdatVL
+Pi4UHLIqu+P4zk05qT+MuP2jryL68fp38rcV1zhS6k9Mr5ibGQtfNN/f9k9kX1tj
+XOPxiHvz2++NpQQfuPNC9skeQSt92X7aJ97srNjEvle5Syyt+evIyqjumA1T3ZVD
+B/99q6fwi3i0vy/92TTzcFFqa+4f0d96iqXROd/IxC2mwfHVTb+cvyI9KGwkW6fR
+CVfN7tFjnVHHDt/085t5u2/ySMj2gD+XrDkXc+XBa0E/bSm2zjalbZ6a0Rwb5MH7
+XWGBGXVr+nd1SrdwaMvONoscXRtDBWR8U5ZmDlV32I/0xJbw7uqwR+9ORRY/Cjp3
+JrysceDUWuP4/NGWg+4lZSHbDns8WbcnjjLLb0ROqiXamscjVdOnm/Yf+qTLVVJe
+3BdVs2/CWkfXr15sPFxNj3XHW5v6dqjCeWn9ha43o7/rWPXRl+WJF8NzU1d0yr5V
+De3S3bHO4UJTRevGW+65wLvKxzP/ASTtxns=
+=gWVI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/publicarray
+
+==================================================================
