@@ -31,4 +31,22 @@ ready(function() {
       }
     }
   }, 180);
+  sr.reveal('.social-reveal', {
+    distance: '200px',
+    origin: 'right',
+    scale: .9,
+    delay: 500,
+    useDelay: 'onload',
+    duration: 400,
+    viewFactor: 0,
+    afterReveal: function (domEl) {
+      if (window.chrome) { // if Google chrome
+        // force browser to redraw dom element.
+        domEl.style.display='table';
+        domEl.offsetHeight;
+        domEl.style.display='';
+        // domEl.style.webkitFontSmoothing = antialiased;
+      }
+    }
+  });
 });
