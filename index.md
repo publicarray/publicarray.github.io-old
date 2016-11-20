@@ -3,7 +3,7 @@ layout: index
 title: "About me"
 description: "Hi, I'm Sebastian, an Australian developer fresh out of University who is interested in information security and open-source software."
 ---
-<img src="assets/1.png" alt="Sebastian Schmidt" width="200" height="200" style="margin: 0 auto;border-radius: 50%;" />
+{% img 1 alt:'Sebastian Schmidt' width:'200' height:'200' style:'margin\: 0 auto;border-radius\: 50%' %}
 # Hello, I'm Sebastian.
 I'm an Australian developer fresh out of University who is interested in information security and open-source software. I believe websites should be fast for everyone, simple, secure and not evade the privacy of it's users. I intend to make the web a safer place one website at at time, following the industry's (OWASP) best practices.
 

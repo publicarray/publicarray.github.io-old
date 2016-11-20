@@ -20,11 +20,11 @@
 
   <base href='{{ site.url }}'>
   <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
-  <link rel="apple-touch-icon" href="{{base}}/assets/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
-  <link href='{{base}}/assets/{{site.blog_theme}}.css' rel='stylesheet'>
-  <script src='{{base}}/assets/reveal.js'></script>
+  {% stylesheet '{{site.blog_theme}}' %}
+  {% javascript reveal %}
   <script>
     window.sr = ScrollReveal();
     // Add class to <html> if ScrollReveal is supported
