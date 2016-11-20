@@ -7,7 +7,7 @@ group: "navigation"
 
 ## [Solar System](https://publicarray.github.io/solarsystem/)
 
-{% include image.html path="solarsystem.jpg" alt="Solar System" %}
+{% include image.html path="solarsystem.jpg" alt="Solar System" width="740" height="608" %}
 
 September 2015
 
@@ -26,7 +26,7 @@ See the slides for More info: [slides.com/publicarray/solar-system](https://slid
 
 June 2016
 
-{% include image.html path="workintegratedlearing.png" alt="Work Integrated Learning" %}
+{% include image.html path="workintegratedlearing.png" alt="Work Integrated Learning" width="1280" height="1280" %}
 
 Work Integrated Learing (WIL) is a program designed to integrate final year, undergraduate and postgraduate UNI students into the workplace. This is a website for the course. It aims to facilitate the process of matching students and industry partners with the added ability to share files and schedule events or meetings.
 

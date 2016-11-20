@@ -9,9 +9,13 @@
 
 @font-face {
   font-family: ionicons;
-  src: url(font_path("ionicons.eot?#iefix")) format("embedded-opentype"),
-  url(font_path("ionicons4.woff")) format("woff"),
-  url(font_path("ionicons4.ttf"))  format("truetype");
+  src: url(font_path("ionicons3.eot?#iefix")) format("embedded-opentype"), /* IE6-IE8 */
+  url(font_path("ionicons3.woff2")) format('woff2'), /* chrome, firefox, edge, iOS 10+, Android 53+ */
+  url(font_path("ionicons3.woff")) format("woff"), /* chrome, firefox, Safari, edge, IE9+, iOS, Android */
+  url(font_path("ionicons3.ttf")) format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url(font_path("ionicons3.svg#ionicons")) format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
 }
 
 // Component
@@ -1576,9 +1580,9 @@ $ionicon-var-xbox: "\f30c";
 // .#{$ionicons-prefix}ios-arrow-thin-left:before {
 //   content: $ionicon-var-ios-arrow-thin-left;
 // }
-// .#{$ionicons-prefix}ios-arrow-thin-right:before {
-//   content: $ionicon-var-ios-arrow-thin-right;
-// }
+.#{$ionicons-prefix}ios-arrow-thin-right:before {
+  content: $ionicon-var-ios-arrow-thin-right;
+}
 // .#{$ionicons-prefix}ios-arrow-thin-up:before {
 //   content: $ionicon-var-ios-arrow-thin-up;
 // }
