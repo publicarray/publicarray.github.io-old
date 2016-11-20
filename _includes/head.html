@@ -24,7 +24,7 @@
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% stylesheet '{{site.blog_theme}}' %}
-  {% javascript reveal %}
+  {% javascript reveal async %}
   <script>
     window.sr = ScrollReveal();
     // Add class to <html> if ScrollReveal is supported
