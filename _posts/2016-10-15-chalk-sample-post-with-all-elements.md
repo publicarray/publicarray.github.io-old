@@ -3,7 +3,7 @@ layout: post
 title: "Chalk sample post with all elements"
 description: "Have a look at all the predesigned elements you can use in Chalk."
 og_image: "workintegratedlearing.png"
-tags:
+tags: [web]
 ---
 
 Chalk uses the default Jekyll syntax highlighting gem Rouge. It has a customized style for both light and dark theme.
@@ -90,7 +90,7 @@ Generates:
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/vO7m8Hre72E?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/vO7m8Hre72E?modestbranding=1&autohide=1&showinfo=0&iv_load_policy=3&rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 {% highlight html %}
