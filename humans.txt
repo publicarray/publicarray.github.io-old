@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: Sebastian Schmidt
+  Site: sebastian-schmidt.me
+  Twitter: @publicarray
+  Location: Australia
+
+/* SITE */
+  Language: English
+  Doctype: HTML5
+  IDE: Sublime Text

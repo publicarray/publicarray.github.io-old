@@ -28,3 +28,14 @@
 .embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
+
+.image {
+  position: absolute;
+}
+
+.image-wrapper {
+  position: relative;
+  background: $base-border-color;
+  transition: all 1s
+}
+

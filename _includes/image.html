@@ -1,10 +1,19 @@
-<div style="padding-bottom: calc(({{ include.height }}/{{ include.width }})*100%);position: relative;">
+{% if page.amp == 1 %}
+<figure>
+  <amp-img
+    src="{% asset_path '{{ include.path }}' %}"
+    layout="responsive"
+    width="{{ assets[include.path].width }}"
+    height="{{ assets[include.path].height }}"></amp-img>
+  <figcaption>{{ include.alt }}</figcaption>
+</figure>
+{% else %}
+<div class="image-wrapper" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
   <a href="{% asset_path '{{ include.path }}' %}" class="fluidbox-trigger">
-    {% img '{{ include.path }}' alt:'{{ include.alt }}' style:'position\: absolute' %}
+    <img class="image" src="{% asset_path '{{ include.path }}' %}" alt="{{ include.alt }}">
   </a>
 </div>
+{% endif %}
 {% comment %}
-https://www.codecaptain.io/blog/web-development/responsive-images-and-preventing-page-reflow/474
-https://www.perpetual-beta.org/weblog/responsive-images-without-browser-reflow.html
 http://caniuse.com/#search=calc
 {% endcomment %}

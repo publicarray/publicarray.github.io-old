@@ -1,0 +1,11 @@
+{% if page.amp == 1 %}
+<amp-twitter width="360" height="60"
+  layout="responsive"
+  data-tweetid="{{ include.tweet }}">
+  <blockquote placeholder class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">{{ include.fallback }}</blockquote>
+</amp-twitter>
+{% else %}
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">{{ include.fallback }}</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- TODO only load once -->
+{% endif %}
