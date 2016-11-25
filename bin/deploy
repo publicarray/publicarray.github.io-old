@@ -5,8 +5,8 @@
 # Exit if any subcommand fails.
 set -e
 
+git stash
 echo "Started deploying"
-
 # Checkout gh-pages branch.
 if [ `git branch | grep gh-pages` ]
 then
@@ -33,5 +33,5 @@ git checkout -
 bower install
 
 echo "Deployed Successfully!"
-
+git stash pop
 exit 0
