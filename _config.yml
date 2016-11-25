@@ -40,8 +40,6 @@ collections:
   my_tags:
     output: true
     permalink: /blog/tag/:slug/
-tag_url:
-  - ajnfalhbfh
 defaults:
   -
     scope:
@@ -63,4 +61,4 @@ gems:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
-permalink: blog/posts/:slug
+permalink: blog/posts/:slug/
