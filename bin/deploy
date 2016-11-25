@@ -5,7 +5,7 @@
 # Exit if any subcommand fails.
 set -e
 
-git stash
+git stash --include-untracked
 echo "Started deploying"
 # Checkout gh-pages branch.
 if [ `git branch | grep gh-pages` ]
