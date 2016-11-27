@@ -19,4 +19,6 @@ if ('serviceWorker' in navigator) {
     // registration failed :(
     console.error('ServiceWorker registration failed: ', err);
   });
+} else {
+  console.log('Service workers are not supported');
 }
