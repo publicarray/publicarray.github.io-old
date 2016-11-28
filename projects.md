@@ -9,6 +9,8 @@ group: "navigation"
 
 October 2016
 
+{% include image.html path="map-dl.jpg" alt="Work Integrated Learning" width="1280" height="1280" %}
+
 A npm module, CLI and Website to download Google map images, using the Google Maps API.
 
 ### Technologies:

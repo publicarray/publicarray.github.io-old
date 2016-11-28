@@ -10,7 +10,7 @@ const PRECACHE_URLS = [
   '/',
   '/service-worker.js',
   '/favicon.ico',
-  '/assets/1.png',
+  '/assets/1.jpg',
   '/blog/',
   '/contact/',
   '/projects/',

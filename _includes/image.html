@@ -10,7 +10,7 @@
 {% else %}
 <div class="image-wrapper" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
   <a href="{% asset_path '{{ include.path }}' %}" class="fluidbox-trigger">
-    <img class="image" src="{% asset_path '{{ include.path }}' %}" alt="{{ include.alt }}">
+    {% img '{{ include.path }}' alt:'{{ include.alt }}' class:'image' %}
   </a>
 </div>
 {% endif %}
