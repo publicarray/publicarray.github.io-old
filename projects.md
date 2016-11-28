@@ -5,21 +5,18 @@ description: "Here is a selected list of projects that I have worked on."
 group: "navigation"
 ---
 
-## [Solar System](https://publicarray.github.io/solarsystem/)
+## [map-dl](https://www.npmjs.com/package/map-dl)
 
-{% include image.html path="solarsystem.jpg" alt="Solar System" width="740" height="608" %}
+October 2016
 
-September 2015
-
-The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles. 
-
-See the slides for More info: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
+A npm module, CLI and Website to download Google map images, using the Google Maps API.
 
 ### Technologies:
 
-* [Jekyll](https://jekyllrb.com/)
-* [WebGl](https://en.wikipedia.org/wiki/WebGL) with [gooengine.js](https://github.com/GooTechnologies/goojs) and [goocreate.com](https://goocreate.com/)
-* [git](https://git-scm.com/) with [Github](https://github.com/) and [Github Pages](https://pages.github.com/)
+* JavaScript
+* [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/)
+* [Google Static Map API](https://developers.google.com/maps/documentation/static-maps/)
+* [npm](https://npmjs.com)
 
 ## Work Integrated Learning
 <!-- ## [Work Integrated Learning](https://workintegratedlearing.azurewebsites.net/) -->
@@ -42,5 +39,22 @@ I was the backend programmer and system administrator during the development of 
 * and many more dev tools such as git, ufw, fail2ban ...
 
 <!-- **Update** I have since moved the website to Azure so that I no longer have to maintain the server. -->
+
+## [Solar System](https://publicarray.github.io/solarsystem/)
+
+September 2015
+
+{% include image.html path="solarsystem.jpg" alt="Solar System" width="740" height="608" %}
+
+
+The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles. 
+
+See the slides for More info: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
+
+### Technologies:
+
+* [WebGl](https://en.wikipedia.org/wiki/WebGL) with [gooengine.js](https://github.com/GooTechnologies/goojs) and [goocreate.com](https://goocreate.com/)
+* [Jekyll](https://jekyllrb.com/)
+* [git](https://git-scm.com/) with [Github](https://github.com/) and [Github Pages](https://pages.github.com/)
 
 *More projects are at [Github](https://github.com/publicarray).*
