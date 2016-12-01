@@ -1,5 +1,5 @@
 
-[![circleci](https://img.shields.io/circleci/project/github/publicarray/blog/master.svg?style=flat-square)](https://circleci.com/gh/publicarray/blog)
+[![circleci](https://img.shields.io/circleci/project/github/publicarray/publicarray.github.io/master.svg?style=flat-square)](https://circleci.com/gh/publicarray/publicarray.github.io)
 
 ## Usage
 
