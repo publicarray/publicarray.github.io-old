@@ -8,7 +8,7 @@
   <figcaption>{{ include.alt }}</figcaption>
 </figure>
 {% else %}
-<div class="image-wrapper" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
+<div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
   <a href="{% asset_path '{{ include.path }}' %}" class="fluidbox-trigger">
     {% img '{{ include.path }}' alt:'{{ include.alt }}' class:'image' %}
   </a>

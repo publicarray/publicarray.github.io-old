@@ -8,7 +8,6 @@ const PRECACHE = 'precache-v{{site.time | date: "%Y%m%d%H%M%S"}}';
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
   '/',
-  '/service-worker.js',
   '/favicon.ico',
   '/assets/1.jpg',
   '/blog/',
@@ -20,7 +19,7 @@ const PRECACHE_URLS = [
   '/assets/ionicons3.woff2'
 ];
 
-var fallback = new Response('Sorry, you appear to be offline and the resource is not cached.', {
+var fallback = new Response('Sorry, you appear to be offline and the resource is not cached. 😟', {
   headers: {
     'Content-Type': 'text/plain'
   }
