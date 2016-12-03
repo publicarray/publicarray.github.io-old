@@ -9,18 +9,16 @@
   <meta name="referrer" content="never">
   <meta name="referrer" content="no-referrer">
 
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.social.twitter }}" />
+<meta name="twitter:creator" content="@{{ site.social.twitter }}" />
+
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path apple-touch-icon.png %}{% endif %}">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path apple-touch-icon.png %}{% endif %}">
 
   <base href='{{ site.url }}'>
   <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
