@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} {% if page.title and page.title != '' %}| {{ page.title }}{% endif %}</title>
+  <title>{{ site.name }} {% if page.title != empty %}| {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Sebastian Schmidt">
