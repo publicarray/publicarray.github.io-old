@@ -1,7 +1,30 @@
+---
+---
 {
   "short_name": "Sebastian",
   "name": "Sebastian Schmidt",
   "start_url": "/",
   "background_color": "#fff",
-  "display": "standalone"
+  "theme_color": "#000",
+  "display": "standalone",
+  "icons":
+  [
+    {
+      "src": "{% asset_path icon16.png %}",
+      "type": "image/png",
+      "sizes": "16x16"
+    }, {
+      "src": "{% asset_path icon64.png %}",
+      "type": "image/png",
+      "sizes": "64x64"
+    }, {
+      "src": "{% asset_path icon128.png %}",
+      "type": "image/png",
+      "sizes": "128x128"
+    }, {
+      "src": "{% asset_path icon256.png %}",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]
 }
