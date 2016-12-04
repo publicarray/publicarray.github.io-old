@@ -1,6 +1,7 @@
 ---
 ---
 // https://serviceworke.rs/
+// http://caniuse.com/#feat=serviceworkers
 
 // Name of the caches used in this version of the service worker.
 const PRECACHE = 'precache-v{{site.time | date: "%Y%m%d%H%M%S"}}';
