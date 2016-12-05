@@ -9,3 +9,6 @@ gem "jekyll-sitemap"
 gem "mini_magick"
 gem "sass"
 gem "uglifier"
+group :jekyll_plugins do
+    gem 'jekyll-livereload'
+end

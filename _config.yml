@@ -8,7 +8,7 @@ canonical: https://sebastian-schmidt.me
 blog_theme: light # Or use dark
 
 # Optional settings
-
+livereload: true
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 rss_enabled: true # Change to false if not
