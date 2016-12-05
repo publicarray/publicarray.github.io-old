@@ -47,7 +47,7 @@ ready(function () { // when Dom ready reveal elements
 });
 
 function waitForWebfont(font, callback) {
-    console.time("web fonts loaded");
+    console.time("web fonts");
     // http://caniuse.com/#feat=font-loading
     var fontsAPI = document.fonts;
     if (fontsAPI) {
@@ -60,7 +60,7 @@ function waitForWebfont(font, callback) {
         // if (fontsAPI.check('1em ' + font)) {
         //   console.log(font +' successfully loaded');
         callback();
-        console.timeEnd("web fonts loaded");
+        console.timeEnd("web fonts");
         // }
       });
     } else { // fall-back to probing
@@ -99,7 +99,7 @@ function waitForWebfont(font, callback) {
             cancelAnimationFrame(requestID);
           }
           callback();
-          console.timeEnd("web fonts loaded");
+          console.timeEnd("web fonts");
           return true;
         }
         requestID = requestAnimationFrame(checkFont);
