@@ -15,7 +15,6 @@ const PRECACHE_URLS = [
   '/contact/',
   '/projects/',
   '/assets/light.css',
-  '/assets/reveal.js',
   '/assets/script.js',
   '/assets/ionicons3.woff2'
 ];

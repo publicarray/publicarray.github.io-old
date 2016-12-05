@@ -17,7 +17,7 @@ function ready(fn) {
   if ('transition' in style && 'transform' in style || 'WebkitTransition' in style && 'WebkitTransform' in style) {
     document.documentElement.classList.add('sr');
   }
-});
+})();
 
 function show(el) {
   el.classList.add('visible');
