@@ -46,45 +46,66 @@ ready(function () { // when Dom ready reveal elements
   });
 });
 
-// https://stackoverflow.com/questions/4383226/using-jquery-to-know-when-font-face-fonts-are-loaded#11689060
 function waitForWebfont(font, callback) {
-    var loadedFonts = 0;
-    var node = document.createElement('span');
-    // Characters for testing char width
-    node.innerHTML = 'W&#xf423;"';
-    // Visible - so we can measure it - but not on the screen
-    node.style.position      = 'absolute';
-    node.style.left          = '-10000px';
-    node.style.top           = '-10000px';
-    // Large font size makes even subtle changes obvious
-    node.style.fontSize      = '300px';
-    node.style.fontFamily    = 'sans-serif';
-    document.body.appendChild(node);
-    // Remember width with no applied web font
-    var width = node.offsetWidth;
-    // change font
-    node.style.fontFamily = font + ', sans-serif';
-    // wait for font to load and compare the width
-    var interval;
-    function checkFont() {
+    console.time("web fonts loaded");
+    // http://caniuse.com/#feat=font-loading
+    var fontsAPI = document.fonts;
+    if (fontsAPI) {
+
+      // ready is fulfilled when all of the fonts are loaded
+      // and ready to be used, or rejected if any font failed to load properly.
+      fontsAPI.ready.then(function () {
+        // check determines whether you can "safely" render some provided text
+        // with a particular font list, such that it won’t cause a "font swap" later.
+        // if (fontsAPI.check('1em ' + font)) {
+        //   console.log(font +' successfully loaded');
+        callback();
+        console.timeEnd("web fonts loaded");
+        // }
+      });
+    } else { // fall-back to probing
+      // https://stackoverflow.com/questions/4383226/using-jquery-to-know-when-font-face-fonts-are-loaded#11689060
+      var requestID;
+      // https://css-tricks.com/using-requestanimationframe/
+      // http://caniuse.com/#feat=requestanimationframe
+      var requestAnimationFrame = window.requestAnimationFrame ||
+        function (f) {return setTimeout(f, 50)};
+      var cancelAnimationFrame = window.cancelAnimationFrame ||
+        window.clearTimeout;
+      var node = document.createElement('span');
+      // Characters for testing char width
+      node.innerHTML = '&#xf423;';
+      // Visible - so we can measure it - but not on the screen
+      node.style.position      = 'absolute';
+      node.style.top           = '-10000px';
+      node.style.left          = '-10000px';
+      // Large font size makes even subtle changes obvious
+      node.style.fontSize      = '300px';
+      node.style.fontFamily    = 'sans-serif';
+      document.body.appendChild(node);
+      // Remember width with no applied web font
+      var width = node.offsetWidth;
+      // change font
+      node.style.fontFamily = font + ', sans-serif';
+
+      // wait for font to load and compare the width
+      function checkFont() {
         // Compare current width with original width
         if (node && node.offsetWidth != width) {
-            ++loadedFonts;
-            node.parentNode.removeChild(node);
-            node = null;
+          // font has loaded
+          node.parentNode.removeChild(node);
+          node = null;
+          if (requestID != 0) {
+            cancelAnimationFrame(requestID);
+          }
+          callback();
+          console.timeEnd("web fonts loaded");
+          return true;
         }
-
-        // If font have been loaded
-        if (loadedFonts == 1) {
-            if (interval) {
-                clearInterval(interval);
-            }
-            callback();
-            return true;
-        }
-    };
-
-    if (!checkFont()) {
-        interval = setInterval(checkFont, 50);
+        requestID = requestAnimationFrame(checkFont);
+      };
+      requestID = requestAnimationFrame(checkFont);
     }
 };
+
+
