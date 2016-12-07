@@ -11,6 +11,7 @@ blog_theme: light # Or use dark
 livereload: true
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
+piwik: 5UberMlZKyw9AdP6Nq2YTEUb3r6nC-iGXW_qvWIfWPI
 rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
@@ -22,7 +23,6 @@ social:
   bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
-
 assets:
   compress:
     css: true

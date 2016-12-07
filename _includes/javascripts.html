@@ -7,3 +7,20 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}
+
+{% if site.piwik %}
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    _paq.push(['setTrackerUrl',  'https://api-bd7ccad35f49662e2dcb31a0b1f32343.seby.io']);
+    _paq.push(['setSiteId', 2]);
+    _paq.push(['setApiToken', '{{ site.piwik }}']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cy80zgkh0odynsy9r8br.seby.io/embed.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+{% endif %}
