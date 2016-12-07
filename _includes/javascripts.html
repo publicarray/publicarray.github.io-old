@@ -18,6 +18,8 @@
     _paq.push(['setTrackerUrl',  'https://api-1fd42dc7faf8a065dfc3d4b80ac809ac.seby.io']);
     _paq.push(['setSiteId', 2]);
     _paq.push(['setApiToken', '{{ site.piwik }}']);
+    // accurately measure the time spent on the last pageview of a visit
+    _paq.push(['enableHeartBeatTimer']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cy80zgkh0odynsy9r8br.seby.io/embed.js'; s.parentNode.insertBefore(g,s);
   })();
