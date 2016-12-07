@@ -11,7 +11,7 @@ blog_theme: light # Or use dark
 livereload: true
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
-piwik: 5UberMlZKyw9AdP6Nq2YTEUb3r6nC-iGXW_qvWIfWPI
+piwik: m3dDqxdkaee-YkBFgkJg-47Na9xMXu9Q9iDEtAhPM-f
 rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
