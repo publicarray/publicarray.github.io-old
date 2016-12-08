@@ -11,7 +11,7 @@ October 2016
 
 {% include image.html path="map-dl.jpg" alt="Work Integrated Learning" width="1280" height="1280" %}
 
-A npm module, CLI and Website to download Google map images, using the Google Maps API.
+A npm module, CLI (command line) and Website designed to download Google map images, using the Google Maps API. It was created to help researchers easily get image data for a specific area.
 
 ### Technologies:
 
@@ -27,7 +27,7 @@ June 2016
 
 {% include image.html path="workintegratedlearing.png" alt="Work Integrated Learning" width="1280" height="1280" %}
 
-Work Integrated Learing (WIL) is a program designed to integrate final year, undergraduate and postgraduate UNI students into the workplace. This is a website for the course. It aims to facilitate the process of matching students and industry partners with the added ability to share files and schedule events or meetings.
+Work Integrated Learning (WIL) is a program designed to integrate final year, undergraduate and postgraduate UNI students into the workplace. This is a website for the course. It aims to facilitate the process of matching students and industry partners with the added ability to share files and schedule events or meetings.
 
 I was the backend programmer and system administrator during the development of the site.
 
@@ -38,7 +38,7 @@ I was the backend programmer and system administrator during the development of 
 * [Papertrail](https://papertrailapp.com/) (a log file aggregator and query tool)
 * [Mailgun](https://mailgun.com/) (send and receive email)
 * [Bitbucket](https://bitbucket.org/)
-* and many more dev tools such as git, ufw, fail2ban ...
+* and many more development tools such as git, ufw, fail2ban ...
 
 <!-- **Update** I have since moved the website to Azure so that I no longer have to maintain the server. -->
 
@@ -47,7 +47,6 @@ I was the backend programmer and system administrator during the development of 
 September 2015
 
 {% include image.html path="solarsystem.jpg" alt="Solar System" width="740" height="608" %}
-
 
 The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles. 
 

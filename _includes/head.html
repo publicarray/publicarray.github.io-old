@@ -18,7 +18,15 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path apple-touch-icon.png %}{% endif %}">
+  {% if page.og_image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
+  <meta property="og:image:width" content="{{ assets[page.og_image].width }}" />
+  <meta property="og:image:height" content="{{ assets[page.og_image].height }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}{% asset_path apple-touch-icon.png %}">
+  <meta property="og:image:width" content="{{ assets['apple-touch-icon.png'].width }}" />
+  <meta property="og:image:height" content="{{ assets['apple-touch-icon.png'].height }}" />
+  {% endif %}
 
   <base href='{{ site.url }}'>
   <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
