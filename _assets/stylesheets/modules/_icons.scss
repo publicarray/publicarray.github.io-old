@@ -27,7 +27,7 @@
   width: 1.1em;
   font-family: ionicons;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -2394,9 +2394,9 @@ $ionicon-var-xbox: "\f30c";
 // .#{$ionicons-prefix}lock-combination:before {
 //   content: $ionicon-var-lock-combination;
 // }
-// .#{$ionicons-prefix}locked:before {
-//   content: $ionicon-var-locked;
-// }
+.#{$ionicons-prefix}locked:before {
+  content: $ionicon-var-locked;
+}
 // .#{$ionicons-prefix}log-in:before {
 //   content: $ionicon-var-log-in;
 // }

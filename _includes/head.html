@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} {% if page.title != empty %}| {{ page.title }}{% endif %}</title>
+  <title>{{ site.name }}{% if page.title != nil and page.title != empty %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Sebastian Schmidt">
@@ -13,10 +13,10 @@
   <meta name="twitter:site" content="@{{ site.social.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.name }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description | default: page.content | markdownify | strip_html | strip_liquid | truncate: 300 }}">
   <meta property="og:site_name" content="{{ site.name }}">
   {% if page.og_image %}
   <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">

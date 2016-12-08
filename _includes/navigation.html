@@ -41,6 +41,13 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social.keybase %}
+      <li>
+        <a href="https://keybase.io/{{ site.social.keybase }}" title="Keybase">
+          <span class="icon icon-locked"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social.bitcoin %}
       <li>
         <a href="{{ site.social.bitcoin }}" title="Bitcoin">
