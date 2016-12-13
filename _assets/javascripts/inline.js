@@ -96,9 +96,6 @@ function waitForWebfont(font, callback) {
           // font has loaded
           node.parentNode.removeChild(node);
           node = null;
-          if (requestID != 0) {
-            cancelAnimationFrame(requestID);
-          }
           callback();
           console.timeEnd("web fonts");
           return true;

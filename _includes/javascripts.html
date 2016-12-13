@@ -5,25 +5,20 @@
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script async defer src="https://www.google-analytics.com/analytics.js"></script>
 {% endif %}
 
 {% if site.piwik %}
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    _paq.push(['setTrackerUrl',  'https://api-1fd42dc7faf8a065dfc3d4b80ac809ac.seby.io']);
-    _paq.push(['setSiteId', 2]);
-    _paq.push(['setApiToken', '{{ site.piwik }}']);
-    // accurately measure the time spent on the last pageview of a visit
-    _paq.push(['enableHeartBeatTimer']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cy80zgkh0odynsy9r8br.seby.io/embed.js'; s.parentNode.insertBefore(g,s);
-  })();
+<script>
+  var _paq = _paq || [
+    ['setDoNotTrack', true], // respect DNT header
+    ['trackPageView'],
+    ['enableLinkTracking'],
+    ['enableHeartBeatTimer'], // measure the time spent on a page
+    ['setTrackerUrl',  'https://api-1fd42dc7faf8a065dfc3d4b80ac809ac.seby.io'],
+    ['setSiteId', 2],
+    ['setApiToken', '{{ site.piwik }}'],
+  ];
 </script>
-<!-- End Piwik Code -->
+<script async defer src="https://cy80zgkh0odynsy9r8br.seby.io/embed.js"></script>
 {% endif %}

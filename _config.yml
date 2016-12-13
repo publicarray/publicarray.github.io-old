@@ -1,14 +1,13 @@
 # Mandatory settings
-
 name: Sebastian Schmidt
 paginate: 25
 paginate_path: "/blog/posts/page/:num/"
 url: https://sebastian-schmidt.me
 canonical: https://sebastian-schmidt.me
-blog_theme: light # Or use dark
+blog_theme: light # Or dark
 
 # Optional settings
-livereload: true
+livereload: true # browser auto-reload for development
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 piwik: m3dDqxdkaee-YkBFgkJg-47Na9xMXu9Q9iDEtAhPM-f
@@ -23,13 +22,16 @@ social:
   bitcoin: # Add your Bitcoin link or address
   keybase: publicarray
 
-# Important settings (change at own risk)
+# https://github.com/jekyll/jekyll-assets/wiki/Configuration
 assets:
   compress:
     css: true
     js: true
-  features:
-    automatic_img_size: false
+  autoprefixer:
+    browsers:
+      - "> 0.5%"
+      - "last 2 versions"
+      - "IE > 9"
   sources:
     - _assets/bower
     - _assets/fonts
@@ -37,6 +39,11 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _vendor/
+  features:
+    automatic_img_size: true
+    automatic_img_alt: true
+
+# Important settings (change at own risk)
 collections:
   my_tags:
     output: true
