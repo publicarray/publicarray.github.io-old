@@ -141,6 +141,9 @@
 
 .article-header {
   padding-bottom: 30px;
+  h1 {
+    font-family: $serif;
+  }
 }
 
 .page-header {
@@ -162,7 +165,9 @@
   }
   h2,
   h3,
-  h4 {
+  h4,
+  h5,
+  h6 {
     display: block;
     margin-bottom: 10px;
     font-family: $sans-serif;
@@ -190,7 +195,7 @@
     color: $gray-light;
     vertical-align: middle;
     &:hover {
-      color: $gray-dark;
+      color: $brand;
     }
   }
 }
