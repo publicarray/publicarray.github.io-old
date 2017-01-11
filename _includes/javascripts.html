@@ -1,11 +1,24 @@
-{% javascript script async defer %}
+<script>
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+    // Registration was successful
+    console.info('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch(function(err) {
+    // registration failed :(
+    console.error('ServiceWorker registration failed: ', err);
+  });
+} else {
+  console.log('Service workers are not supported');
+}
+</script>
 
 {% if site.ga_analytics %}
-  <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
-  </script>
-  <script async defer src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+  ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
+</script>
+<script async defer src="https://www.google-analytics.com/analytics.js"></script>
 {% endif %}
 
 {% if site.piwik %}
@@ -21,4 +34,9 @@
   ];
 </script>
 <script async defer src="https://cy80zgkh0odynsy9r8br.seby.io/embed.js"></script>
+{% endif %}
+
+{% if layout.style == "inline" or layout.style == "page" or layout.style == "post" %}
+  {% assign fluidboxInclude = 1 %}
+  {% javascript fluidBox async defer %}
 {% endif %}

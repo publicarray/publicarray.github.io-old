@@ -1,0 +1,25 @@
+---
+permalink: /offline.html
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | Offline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>{% asset notfound.scss %}</style>
+</head>
+<body>
+  <main role="main" class="notfound-wrapper">
+    <div class="notfound-content">
+      <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
+      <p>
+        Oh No, looks like you are Offline!
+      </p>
+    </div>
+  </main>
+</body>
+</html>
