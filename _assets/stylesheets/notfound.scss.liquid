@@ -1,0 +1,48 @@
+// =============================================================================
+// 404 page
+// =============================================================================
+/*! {{ site.blog_theme }}-notfound.css */
+
+@import "theme/{{ site.blog_theme }}";
+@import "modules/variables";
+@import "modules/mixins";
+// @import "vendor/normalize";
+@import "modules/base";
+
+.notfound-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-content {
+  flex: auto;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-family: $serif;
+    font-size: 36px;
+    a {
+      color: $header-logo-color;
+      &:hover {
+        color: $brand;
+      }
+    }
+  }
+  p {
+    display: block;
+    text-align: center;
+    a {
+      color: $header-logo-color;
+      &:hover {
+        color: $brand;
+      }
+    }
+  }
+}

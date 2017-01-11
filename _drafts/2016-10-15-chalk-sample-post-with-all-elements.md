@@ -35,10 +35,10 @@ Chalk includes 3 headings by default:
 ## Lists
 
 Unordered list example:
-* Unordered list item 1
-* Unordered list item 2
-* Unordered list item 3
-* Unordered list item 4
+*   Unordered list item 1
+*   Unordered list item 2
+*   Unordered list item 3
+*   Unordered list item 4
 
 Ordered list example:
 1. Ordered list item 1
@@ -47,11 +47,11 @@ Ordered list example:
 4. Ordered list item 1
 
 {% highlight markdown %}
-* Unordered list item 1
-* Unordered list item 2
+*   Unordered list item 1
+*   Unordered list item 2
 
-1. Order list item 1
-2. Order list item 1
+1.  Order list item 1
+2.  Order list item 1
 {% endhighlight %}
 
 ## Quotes
@@ -59,20 +59,20 @@ Ordered list example:
 A quote looks like this:
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna.
+>incididunt ut labore et dolore magna.
 
 {% highlight markdown %}
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna.
+>incididunt ut labore et dolore magna.
 {% endhighlight %}
 
 ## Media
 
 Images can be added with a default `<img>` tag.
 If you wish that an image can be enlarged on click use the image include tag. You can pass 3 variables:
-- `path`: Image to show in the blog post.
-- `path-detail`: Image to show when enlarging.
-- `alt`: Alt text for image in blog post
+-   `path`: Image to show in the blog post.
+-   `path-detail`: Image to show when enlarging.
+-   `alt`: Alt text for image in blog post
 
 {% highlight liquid %}
 {% raw %}
@@ -122,4 +122,3 @@ Generates:
 {% endhighlight %}
 
 {% include twitter.html tweet="vO7m8Hre72E" fallback='Alright <a href="https://twitter.com/nsandihelp">@nsandihelp</a>, this is kinda... stupid <a href="https://t.co/cGQzlwzNjH">https://t.co/cGQzlwzNjH</a> <a href="https://t.co/3LEaTBgrpA">pic.twitter.com/3LEaTBgrpA</a></p>&mdash; Troy Hunt (@troyhunt) <a href="https://twitter.com/troyhunt/status/801002878810718208">November 22, 2016</a>' %}
-
