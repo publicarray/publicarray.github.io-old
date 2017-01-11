@@ -48,7 +48,9 @@ function domReady(fn) {
   });
 
   function waitForWebfont(font, callback) {
-      console.time("web fonts");
+      if (performance.mark) {
+        performance.mark("web fonts start");
+      }
       // http://caniuse.com/#feat=font-loading
       var fontsAPI = document.fonts;
       if (fontsAPI) {
@@ -61,7 +63,10 @@ function domReady(fn) {
           // if (fontsAPI.check('1em ' + font)) {
           //   console.log(font +' successfully loaded');
           callback();
-          console.timeEnd("web fonts");
+          if (performance.mark) {
+            performance.mark("web fonts downloaded");
+            performance.measure("web fonts", "web fonts start", "web fonts downloaded");
+          }
           // }
         });
       } else { // fall-back to probing
