@@ -28,12 +28,12 @@ if ('serviceWorker' in navigator) {
     ['trackPageView'],
     ['enableLinkTracking'],
     ['enableHeartBeatTimer'], // measure the time spent on a page
-    ['setTrackerUrl',  'https://api-1fd42dc7faf8a065dfc3d4b80ac809ac.seby.io'],
+    // ['setTrackerUrl',  'https://tracker-api.seby.io'],
     ['setSiteId', 2],
     ['setApiToken', '{{ site.piwik }}'],
   ];
 </script>
-<script async defer src="https://cy80zgkh0odynsy9r8br.seby.io/embed.js"></script>
+<script async defer src="piwik.js"></script>
 {% endif %}
 
 {% if layout.style == "inline" or layout.style == "page" or layout.style == "post" %}

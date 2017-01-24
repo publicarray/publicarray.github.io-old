@@ -10,7 +10,7 @@ blog_theme: light # Or dark
 livereload: true # browser auto-reload for development
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
-piwik: m3dDqxdkaee-YkBFgkJg-47Na9xMXu9Q9iDEtAhPM-f
+piwik: # Add your Piwik Tracking Id
 rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
