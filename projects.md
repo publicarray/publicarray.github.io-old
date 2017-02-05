@@ -34,7 +34,7 @@ I was the backend programmer and system administrator during the development of 
 ### Technologies:
 * [Laravel](https://laravel.com/) 5.2 (laravel-debugbar, maatwebsite/excel, laracasts/generators, ...)
 * [Rocketeer](http://rocketeer.autopergamene.eu/) (a deployment tool)
-* [Digital Ocean](https://www.digitalocean.com/) (Debian jessie, php 7, MySql, apache2)
+* [Digital Ocean](https://www.digitalocean.com/) (Debian jessie, php 7, MySQL, Apache2)
 * [Papertrail](https://papertrailapp.com/) (a log file aggregator and query tool)
 * [Mailgun](https://mailgun.com/) (send and receive email)
 * [Bitbucket](https://bitbucket.org/)
