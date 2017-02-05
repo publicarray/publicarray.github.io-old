@@ -36,6 +36,10 @@ function domReady(fn) {
     }
   }
 
+  function loadGlyps() {
+    document.body.classList.add('font-loaded');
+  }
+
   domReady(function () { // when Dom ready reveal elements
     var revealEls = document.getElementsByClassName('reveal');
     reveal(revealEls, 180);
@@ -60,14 +64,15 @@ function domReady(fn) {
         fontsAPI.ready.then(function () {
           // check determines whether you can "safely" render some provided text
           // with a particular font list, such that it won’t cause a "font swap" later.
-          // if (fontsAPI.check('1em ' + font)) {
-          //   console.log(font +' successfully loaded');
-          callback();
+          if (fontsAPI.check('1em ' + font)) {
+            loadGlyps(); // only load font glyps when the font is loaded and ready
+          }
+          callback();  // do animation when allFonts are ready (not necessaraly loades)
+
           if (performance.mark) {
             performance.mark("web fonts downloaded");
             performance.measure("web fonts", "web fonts start", "web fonts downloaded");
           }
-          // }
         });
       } else { // fall-back to probing
         // https://stackoverflow.com/questions/4383226/using-jquery-to-know-when-font-face-fonts-are-loaded#11689060
@@ -101,14 +106,14 @@ function domReady(fn) {
             // font has loaded
             node.parentNode.removeChild(node);
             node = null;
-            callback();
+            loadGlyps(); // only load font glyps when the font is loaded and ready
             console.timeEnd("web fonts");
             return true;
           }
           requestID = requestAnimationFrame(checkFont);
         };
         requestID = requestAnimationFrame(checkFont);
+        callback(); // do animation even when fonts are not yet ready (use fallback text)
       }
   };
 })();
-

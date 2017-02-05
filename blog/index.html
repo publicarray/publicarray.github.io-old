@@ -11,7 +11,7 @@ description: "Sebastan's personal blog. My options and stories of the life as a 
       <a href=" {{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
-          <span class="icon icon-ios-arrow-thin-right"></span>
+          <span class="icon icon-ios-arrow-thin-right" aria-hidden="true"></span>
         </h5>
       </a>
       <p>{{ post.description }}</p>
@@ -42,10 +42,10 @@ description: "Sebastan's personal blog. My options and stories of the life as a 
   {% if paginator.total_pages > 1 %}
     <li class="article-pagination reveal">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right"></span></a>
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right" aria-hidden="true"></span></a>
       {% endif %}
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}"><span class="icon icon-ios-arrow-thin-left"></span> Older posts</a>
+        <a href="{{ paginator.next_page_path }}"><span class="icon icon-ios-arrow-thin-left" aria-hidden="true"></span> Older posts</a>
       {% endif %}
     </li>
   {% endif %}

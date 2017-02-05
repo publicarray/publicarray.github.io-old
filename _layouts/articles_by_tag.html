@@ -7,7 +7,10 @@ layout: default
     {% for post in site.tags[page.slug] %}
       <li class="article-list-item reveal">
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-          <h5>{{ post.title }}</h5>
+          <h5>
+            {{ post.title }}
+            <span class="icon icon-ios-arrow-thin-right" aria-hidden="true"></span>
+        </h5>
         </a>
         <p>{{ post.description }}</p>
         <div class="article-list-footer">

@@ -33,6 +33,25 @@
   text-align: center;
 }
 
+.icon-fallback .icon {
+  visibility: hidden;
+  position: absolute;
+}
+
+.font-loaded .icon-fallback .icon {
+  visibility: visible;
+  position: inherit;
+}
+
+.font-loaded .icon-fallback .text {
+  /* a generic way to visually hide content while remaining accessible to screen readers (h5bp.com) */
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
 // Descendant
 // =============================================================================
 
@@ -1578,12 +1597,19 @@ $ionicon-var-xbox: "\f30c";
 // .#{$ionicons-prefix}ios-arrow-thin-down:before {
 //   content: $ionicon-var-ios-arrow-thin-down;
 // }
-// .#{$ionicons-prefix}ios-arrow-thin-left:before {
-//   content: $ionicon-var-ios-arrow-thin-left;
-// }
-.#{$ionicons-prefix}ios-arrow-thin-right:before {
+.font-loaded .#{$ionicons-prefix}ios-arrow-thin-left:before {
+  content: $ionicon-var-ios-arrow-thin-left;
+}
+.#{$ionicons-prefix}ios-arrow-thin-left:before { // Fallback
+  content: '\2190';
+}
+.font-loaded .#{$ionicons-prefix}ios-arrow-thin-right:before {
   content: $ionicon-var-ios-arrow-thin-right;
 }
+.#{$ionicons-prefix}ios-arrow-thin-right:before { // Fallback
+  content: '\2192';
+}
+
 // .#{$ionicons-prefix}ios-arrow-thin-up:before {
 //   content: $ionicon-var-ios-arrow-thin-up;
 // }

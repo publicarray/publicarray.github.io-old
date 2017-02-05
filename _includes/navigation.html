@@ -9,63 +9,90 @@
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" title="Twitter">
-          <span class="icon icon-social-twitter"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-twitter" aria-hidden="true"></span>
+            <span class="text">Twitter</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.facebook %}
       <li>
         <a href="https://www.facebook.com/{{ site.social.facebook }}" title="Facebook">
-          <span class="icon icon-social-facebook"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-facebook" aria-hidden="true"></span>
+            <span class="text">Facebook</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.github %}
       <li>
         <a href="https://github.com/{{ site.social.github }}" title="GitHub">
-          <span class="icon icon-social-github"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-github" aria-hidden="true"></span>
+            <span class="text">Github</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.dribbble %}
       <li>
         <a href="https://dribbble.com/{{ site.social.dribbble }}" title="Dribbble">
-          <span class="icon icon-social-dribbble-outline"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-dribbble-outline" aria-hidden="true"></span>
+            <span class="text">Dribbble</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.linkedin %}
       <li>
         <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn">
-          <span class="icon icon-social-linkedin"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-linkedin" aria-hidden="true"></span>
+            <span class="text">LinkedIn</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.keybase %}
       <li>
         <a href="https://keybase.io/{{ site.social.keybase }}" title="Keybase">
-          <span class="icon icon-locked"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-locked" aria-hidden="true"></span>
+            <span class="text">Keybase</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.bitcoin %}
       <li>
         <a href="{{ site.social.bitcoin }}" title="Bitcoin">
-          <span class="icon icon-social-bitcoin"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-bitcoin" aria-hidden="true"></span>
+            <span class="text">Bitcoin</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.social.email %}
       <li>
         <a href="mailto:{{ site.social.email }}" title="Email">
-          <span class="icon icon-at"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-at" aria-hidden="true"></span>
+            <span class="text">Email</span>
+          </span>
         </a>
       </li>
     {% endif %}
     {% if site.rss_enabled == true %}
       <li>
         <a href="{{ 'feed.xml' | relative_url }}" title="RSS">
-          <span class="icon icon-social-rss"></span>
+          <span class="icon-fallback">
+            <span class="icon icon-social-rss" aria-hidden="true"></span>
+            <span class="text">RSS</span>
+          </span>
         </a>
       </li>
     {% endif %}
