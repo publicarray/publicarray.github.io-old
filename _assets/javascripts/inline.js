@@ -57,7 +57,7 @@ function domReady(fn) {
       }
       // http://caniuse.com/#feat=font-loading
       var fontsAPI = document.fonts;
-      if (fontsAPI) {
+      if (fontsAPI && navigator.userAgent.toLowerCase().indexOf('safari/') == -1) {
 
         // ready is fulfilled when all of the fonts are loaded
         // and ready to be used, or rejected if any font failed to load properly.
@@ -107,7 +107,6 @@ function domReady(fn) {
             node.parentNode.removeChild(node);
             node = null;
             loadGlyps(); // only load font glyps when the font is loaded and ready
-            console.timeEnd("web fonts");
             return true;
           }
           requestID = requestAnimationFrame(checkFont);
