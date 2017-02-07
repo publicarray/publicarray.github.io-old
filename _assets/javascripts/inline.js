@@ -60,7 +60,7 @@ function domReady(fn) {
       var isSafari = navigator.userAgent.toLowerCase().indexOf('safari') != -1 &&
         navigator.userAgent.toLowerCase().indexOf('chrome') == -1;
 
-      if (fontsAPI && isSafari) {
+      if (fontsAPI && !isSafari) {
         console.log("A-grade font loading")
         // ready is fulfilled when all of the fonts are loaded
         // and ready to be used, or rejected if any font failed to load properly.
