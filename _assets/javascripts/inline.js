@@ -57,8 +57,11 @@ function domReady(fn) {
       }
       // http://caniuse.com/#feat=font-loading
       var fontsAPI = document.fonts;
-      if (fontsAPI && navigator.userAgent.toLowerCase().indexOf('safari/') == -1) {
+      var isSafari = navigator.userAgent.toLowerCase().indexOf('safari') != -1 &&
+        navigator.userAgent.toLowerCase().indexOf('chrome') == -1;
 
+      if (fontsAPI && isSafari) {
+        console.log("A-grade font loading")
         // ready is fulfilled when all of the fonts are loaded
         // and ready to be used, or rejected if any font failed to load properly.
         fontsAPI.ready.then(function () {
@@ -75,14 +78,14 @@ function domReady(fn) {
           }
         });
       } else { // fall-back to probing
+        console.log("B-grade font loading")
         // https://stackoverflow.com/questions/4383226/using-jquery-to-know-when-font-face-fonts-are-loaded#11689060
-        var requestID;
         // https://css-tricks.com/using-requestanimationframe/
         // http://caniuse.com/#feat=requestanimationframe
         var requestAnimationFrame = window.requestAnimationFrame ||
           function (f) {return setTimeout(f, 50)};
-        var cancelAnimationFrame = window.cancelAnimationFrame ||
-          window.clearTimeout;
+
+        var iteration = 0;
         var node = document.createElement('span');
         // Characters for testing char width
         node.innerHTML = '&#xf423;';
@@ -101,6 +104,11 @@ function domReady(fn) {
 
         // wait for font to load and compare the width
         function checkFont() {
+           // wait for a maximum of (750 ms) 15 iterations before animation
+          console.log(iteration);
+          if (iteration == 15 || node && node.offsetWidth != width) {
+            callback(); // do animation even when fonts are not yet ready (use fallback text)
+          }
           // Compare current width with original width
           if (node && node.offsetWidth != width) {
             // font has loaded
@@ -109,10 +117,10 @@ function domReady(fn) {
             loadGlyps(); // only load font glyps when the font is loaded and ready
             return true;
           }
-          requestID = requestAnimationFrame(checkFont);
-        };
-        requestID = requestAnimationFrame(checkFont);
-        callback(); // do animation even when fonts are not yet ready (use fallback text)
+          iteration++;
+          requestAnimationFrame(checkFont);
+        }
+        requestAnimationFrame(checkFont);
       }
-  };
+  }
 })();
