@@ -105,7 +105,6 @@ function domReady(fn) {
         // wait for font to load and compare the width
         function checkFont() {
            // wait for a maximum of (750 ms) 15 iterations before animation
-          console.log(iteration);
           if (iteration == 15 || node && node.offsetWidth != width) {
             callback(); // do animation even when fonts are not yet ready (use fallback text)
           }
