@@ -3,3 +3,4 @@ _site/
 .asset-cache/
 _assets/bower/
 .jekyll-metadata
+.DS_Store
