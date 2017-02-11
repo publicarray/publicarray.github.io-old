@@ -10,21 +10,25 @@
   "icons":
   [
     {
-      "src": "{% asset_path icon16.png %}",
+      "src": "favicon-16x16.png",
       "type": "image/png",
       "sizes": "16x16"
     }, {
-      "src": "{% asset_path icon64.png %}",
+      "src": "favicon-32x32.png",
       "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "32x32"
     }, {
-      "src": "{% asset_path icon128.png %}",
+      "src": "favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }, {
+      "src": "favicon-128.png",
       "type": "image/png",
       "sizes": "128x128"
     }, {
-      "src": "{% asset_path icon256.png %}",
+      "src": "favicon-196x196.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "196x196"
     }
   ]
 }
