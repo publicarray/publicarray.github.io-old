@@ -32,7 +32,9 @@
   <base href='{{ site.url }}'>
   <link rel="canonical" href="{{ site.canonical }}{{ page.url | relative_url }}" />
   <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 25 blog posts" />
   {% assign stylesheet = {{layout.style|default:"inline"}} %}
   <style>{% asset {{stylesheet}}.scss %}</style>
