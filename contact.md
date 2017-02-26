@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Contact"
-description: "Social media accounts and places to reach me on-line 📫 . </br>Drop me a line or ask a question. I'd be delighted to hear from you."
+description: "Social media accounts and places to reach me on-line 📫 . <br>Drop me a line or ask a question. I'd be delighted to hear from you."
 group: "navigation"
 ---
 
