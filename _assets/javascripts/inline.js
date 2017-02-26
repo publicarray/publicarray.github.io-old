@@ -51,6 +51,8 @@ function domReady(fn) {
     });
   });
 
+  // https://www.paulirish.com/2009/fighting-the-font-face-fout/
+  // https://medium.com/@addyosmani/javascript-start-up-performance-69200f43b201
   function waitForWebfont(font, callback) {
       if (performance.mark) {
         performance.mark("web fonts start");

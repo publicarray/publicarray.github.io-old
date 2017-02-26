@@ -7,7 +7,7 @@ canonical: https://sebastian-schmidt.me
 blog_theme: light # Or dark
 
 # Optional settings
-livereload: true # browser auto-reload for development
+livereload: false # browser auto-reload for development
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 piwik: # Add your Piwik Tracking Id
