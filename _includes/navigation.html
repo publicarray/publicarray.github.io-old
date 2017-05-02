@@ -66,6 +66,17 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social.tox %}
+      <li>
+        <a href="https://toxme.io/u/{{ site.social.tox }}" title="Tox">
+          <span class="icon-fallback">
+            <img class="icon" aria-hidden="true" src="images/Tox.png">
+            <!-- <span class="icon icon-tox" aria-hidden="true"></span> -->
+            <span class="text">Tox</span>
+          </span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social.bitcoin %}
       <li>
         <a href="{{ site.social.bitcoin }}" title="Bitcoin">

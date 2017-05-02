@@ -21,6 +21,7 @@ social:
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
   keybase: publicarray
+  tox: publicarray
 
 # https://github.com/jekyll/jekyll-assets/wiki/Configuration
 assets:
