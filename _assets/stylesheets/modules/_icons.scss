@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: ionicons;
-  src: url(asset_path("ionicons3.eot?#iefix")) format("embedded-opentype"), /* IE6-IE8 */
-  url(asset_path("ionicons3.woff2")) format('woff2'), /* chrome, firefox, edge, iOS 10+, Android 53+ */
-  url(asset_path("ionicons3.woff")) format("woff"), /* chrome, firefox, Safari, edge, IE9+, iOS, Android */
-  url(asset_path("ionicons3.ttf")) format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url(asset_path("ionicons3.svg#ionicons")) format("svg"); /* iOS 4.1- */
+  src: url(asset_path("ionicons4.eot?#iefix")) format("embedded-opentype"), /* IE6-IE8 */
+  url(asset_path("ionicons4.woff2")) format('woff2'), /* chrome, firefox, edge, iOS 10+, Android 53+ */
+  url(asset_path("ionicons4.woff")) format("woff"), /* chrome, firefox, Safari, edge, IE9+, iOS, Android */
+  url(asset_path("ionicons4.ttf")) format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url(asset_path("ionicons4.svg#ionicons")) format("svg"); /* iOS 4.1- */
   font-style: normal;
   font-weight: normal;
 }
@@ -766,6 +766,7 @@ $ionicon-var-thumbsdown: "\f250";
 $ionicon-var-thumbsup: "\f251";
 $ionicon-var-toggle: "\f355";
 $ionicon-var-toggle-filled: "\f354";
+$ionicon-var-tox: '\f310';
 $ionicon-var-transgender: "\f4f5";
 $ionicon-var-trash-a: "\f252";
 $ionicon-var-trash-b: "\f253";
@@ -2927,6 +2928,9 @@ $ionicon-var-xbox: "\f30c";
 // .#{$ionicons-prefix}toggle-filled:before {
 //   content: $ionicon-var-toggle-filled;
 // }
+.#{$ionicons-prefix}tox:before {
+  content: $ionicon-var-tox;
+}
 // .#{$ionicons-prefix}transgender:before {
 //   content: $ionicon-var-transgender;
 // }
