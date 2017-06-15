@@ -54,16 +54,16 @@ function domReady(fn) {
   // https://www.paulirish.com/2009/fighting-the-font-face-fout/
   // https://medium.com/@addyosmani/javascript-start-up-performance-69200f43b201
   function waitForWebfont(font, callback) {
-      if (performance.mark) {
-        performance.mark("web fonts start");
-      }
+      // if (performance.mark) {
+      //   performance.mark("web fonts start");
+      // }
       // http://caniuse.com/#feat=font-loading
       var fontsAPI = document.fonts;
       var isSafari = navigator.userAgent.toLowerCase().indexOf('safari') != -1 &&
         navigator.userAgent.toLowerCase().indexOf('chrome') == -1;
 
       if (fontsAPI && !isSafari) {
-        console.log("A-grade font loading")
+        // console.log("A-grade font loading")
         // ready is fulfilled when all of the fonts are loaded
         // and ready to be used, or rejected if any font failed to load properly.
         fontsAPI.ready.then(function () {
@@ -74,10 +74,10 @@ function domReady(fn) {
           }
           callback();  // do animation when allFonts are ready (not necessaraly loades)
 
-          if (performance.mark) {
-            performance.mark("web fonts downloaded");
-            performance.measure("web fonts", "web fonts start", "web fonts downloaded");
-          }
+          // if (performance.mark) {
+          //   performance.mark("web fonts downloaded");
+          //   performance.measure("web fonts", "web fonts start", "web fonts downloaded");
+          // }
         });
       } else { // fall-back to probing
         console.log("B-grade font loading")
