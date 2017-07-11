@@ -4,6 +4,20 @@ title: "Projects"
 description: "Here is a selected list of projects that I have worked on."
 group: "navigation"
 ---
+## [Open DNS resolver](https://dns.seby.io)
+
+2017
+
+{% include image.html path="dns.png" alt="DNS Statistics" width="802" height="650" %}
+
+A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](dnscrypt.org) and (experimental) [DNS-Over-TLS](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Implementation+Status) for increased security and privacy. The [Ansible playbook and configuration files are open source](https://github.com/publicarray/dns-resolver) for you to inspect at your leisure. For pretty graphs and stats see [metronome from powerdns](https://metronome1.powerdns.com/?server=dnsdist.dns.seby)
+
+### Technologies
+* [Unbound](https://www.unbound.net/) (DNS Resolver with DNSSEC)
+* [NSD](https://www.nlnetlabs.nl/projects/nsd/) (for OpenNIC)
+* [dnsdist](http://dnsdist.org/) - PowerDNS (for abuse protection and statistics)
+* [Ansible](https://www.ansible.com/) (for deployment)
+* [Molecule](https://molecule.readthedocs.io/en/master/) and [Vagrant](https://www.vagrantup.com/) (for testing)
 
 ## [map-dl](https://www.npmjs.com/package/map-dl)
 
@@ -21,7 +35,6 @@ A npm module, CLI (command line) and Website designed to download Google map ima
 * [npm](https://npmjs.com)
 
 ## Work Integrated Learning
-<!-- ## [Work Integrated Learning](https://workintegratedlearing.azurewebsites.net/) -->
 
 June 2016
 
