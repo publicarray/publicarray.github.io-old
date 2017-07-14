@@ -15,7 +15,7 @@ A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC
 ### Technologies
 * [Unbound](https://www.unbound.net/) (DNS Resolver with DNSSEC)
 * [NSD](https://www.nlnetlabs.nl/projects/nsd/) (for OpenNIC)
-* [dnsdist](http://dnsdist.org/) - PowerDNS (for abuse protection and statistics)
+* [dnsdist](http://dnsdist.org/) - PowerDNS (for DNSCrypt, abuse protection and statistics)
 * [Ansible](https://www.ansible.com/) (for deployment)
 * [Molecule](https://molecule.readthedocs.io/en/master/) and [Vagrant](https://www.vagrantup.com/) (for testing)
 

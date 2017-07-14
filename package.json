@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "fluidbox": "^2.0.5"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "start": "bundle exec jekyll serve --incremental",
+    "update-all": "yarn upgrade-interactive; bundle update",
+    "setup": "yarn install --production; gem install bundler --conservative",
+    "deploy": "bin/deploy"
+  },
+  "name": "publicarray.github.io",
+  "version": "1.0.0",
+  "description": "My tiny space on the WWW",
+  "main": "index.html",
+  "repository": "git@github.com:publicarray/publicarray.github.io.git",
+  "author": "Sebastian Schmidt",
+  "license": "Apache-2.0"
+}

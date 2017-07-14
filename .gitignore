@@ -4,3 +4,5 @@ _site/
 _assets/bower/
 .jekyll-metadata
 .DS_Store
+node_modules
+yarn-error.log

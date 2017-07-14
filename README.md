@@ -5,21 +5,27 @@
 
 ### Installation
 
-If you haven't installed Ruby then go ahead and install it with: `brew install Ruby`.
+If you haven't installed Ruby, Node or Yarn then go ahead and install it with: `brew install ruby node yarn`.
 Next setup your environment:
 
-    bin/setup
+```sh
+yarn setup
+```
 
 ### Development
 
 Run Jekyll:
 
-    bundle exec jekyll serve
+```sh
+yarn start
+```
 
 ### Deploy to GitHub Pages
 
 Run this in the root project folder in your console:
 
-    bin/deploy
+```sh
+yarn deploy
+```
 
 You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).

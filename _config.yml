@@ -35,12 +35,11 @@ assets:
       - "last 2 versions"
       - "IE > 9"
   sources:
-    - _assets/bower
+    - node_modules
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
   features:
     automatic_img_size: true
     automatic_img_alt: true
