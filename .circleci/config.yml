@@ -2,23 +2,23 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.3
+      - image: circleci/ruby:2.3-node
     steps:
       - checkout
-      - restore_cache:
-          key: yarn-cache-{{ .Branch }}-{{ checksum "package.json" }}
+      - cache-restore:
+          key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run:
-          name: install yarn packages
-          command: yarn setup
+          name: bundle install
+          command: bundle install --path vendor/bundle
       - save_cache:
-          key: yarn-cache-{{ .Branch }}-{{ checksum "package.json" }}
+          key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
-            - ~/.cache/yarn
+            - vendor/bundle
       - run:
-          name: yarn build
-          command: yarn build
+          name: Jekyll build
+          command: bundle exec jekyll build
       - run:
-          name: test with htmlproofer
+          name: Test with htmlproofer
           command: |
             bundle exec htmlproofer ./_site \
               --only-4xx \
