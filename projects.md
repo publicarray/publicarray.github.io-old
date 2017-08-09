@@ -63,7 +63,7 @@ September 2015
 
 The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles. 
 
-See the slides for More info: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
+See the slides for more information: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
 
 ### Technologies:
 
