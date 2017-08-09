@@ -5,7 +5,7 @@ jobs:
       - image: circleci/ruby:2.3-node
     steps:
       - checkout
-      - cache-restore:
+      - restore_cache:
           key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run:
           name: bundle install
