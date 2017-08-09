@@ -23,7 +23,7 @@ A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC
 
 October 2016
 
-{% include image.html path="map-dl.jpg" alt="Work Integrated Learning" width="1280" height="1280" %}
+{% include image.html path="map-dl.jpg" alt="Showing export progress from Google Maps" width="1280" height="1280" %}
 
 A npm module, CLI (command line) and Website designed to download Google map images, using the Google Maps API. It was created to help researchers easily get image data for a specific area.
 
