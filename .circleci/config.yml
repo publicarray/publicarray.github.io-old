@@ -6,32 +6,30 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: yarn-cache-{{ checksum "package.json" }}
+          key: yarn-cache-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
           name: install yarn packages
           command: yarn setup
       - save_cache:
-          key: yarn-cache-{{ checksum "package.json" }}
-          paths: - ~/.cache/yarn
+          key: yarn-cache-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/.cache/yarn
       - run:
           name: yarn build
           command: yarn build
-  test:
-    build:
-      docker:
-        - image: circleci/ruby:2.3
-      steps:
-      - checkout
       - run:
           name: test with htmlproofer
-          command: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml" --url-ignore "/\.\//"
-            # bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml" --check-img-http --url-ignore "/\.\//" --check-html --report-invalid-tags --report-missing-names --report-missing-doctype
-            # wait for https://github.com/gjtorikian/html-proofer/pull/362 to me merged
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
+          command: |
+            bundle exec htmlproofer ./_site \
+              --only-4xx \
+              --allow-hash-href \
+              --assume-extension \
+              --check-opengraph \
+              --url-ignore "feed.xml" \
+              --url-ignore "/\.\//"
+          #   --check-img-http \
+          #   --check-html \
+          #   --report-invalid-tags \
+          #   --report-missing-names \
+          #   --report-missing-doctype
+          # wait for https://github.com/gjtorikian/html-proofer/pull/362
