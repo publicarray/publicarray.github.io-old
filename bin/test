@@ -1,0 +1,15 @@
+#!/bin/bash
+
+bundle exec htmlproofer ./_site \
+    --only-4xx \
+    --allow-hash-href \
+    --assume-extension \
+    --check-opengraph \
+    --url-ignore "feed.xml" \
+    --url-ignore "/\.\//"
+#   --check-img-http \
+#   --check-html \
+#   --report-invalid-tags \
+#   --report-missing-names \
+#   --report-missing-doctype
+# wait for https://github.com/gjtorikian/html-proofer/pull/362
