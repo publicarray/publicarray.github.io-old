@@ -6,6 +6,15 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          key: npm-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: install-npm-packages
+          command: npm install
+      - save_cache:
+          key: npm-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - restore_cache:
           key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run:
           name: bundle install
