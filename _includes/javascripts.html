@@ -13,15 +13,15 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
-{% if site.ga_analytics %}
+{%- if site.ga_analytics -%}
 <script>
   window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
   ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
 </script>
-<script async defer src="https://www.google-analytics.com/analytics.js"></script>
-{% endif %}
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+{%- endif -%}
 
-{% if site.piwik %}
+{%- if site.piwik -%}
 <script>
   var _paq = _paq || [
     ['setDoNotTrack', true], // respect DNT header
@@ -33,10 +33,10 @@ if ('serviceWorker' in navigator) {
     ['setApiToken', '{{ site.piwik }}'],
   ];
 </script>
-<script async defer src="piwik.js"></script>
-{% endif %}
+<script async src="piwik.js"></script>
+{%- endif -%}
 
-{% if layout.style == "inline" or layout.style == "page" or layout.style == "post" %}
-  {% assign fluidboxInclude = 1 %}
-  {% javascript fluidBox async defer %}
-{% endif %}
+{%- if layout.style == "inline" or layout.style == "page" or layout.style == "post" %}
+  {%- assign fluidboxInclude = 1 %}
+  {%- javascript fluidBox async %}
+{%- endif %}

@@ -1,12 +1,12 @@
 <nav class="header-nav">
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
   <ul class="header-links">
-    {% assign pages_list = site.pages %}
-    {% assign group = 'navigation' %}
-    {% include pages_list.html %}
+    {%- assign pages_list = site.pages %}
+    {%- assign group = 'navigation' %}
+    {%- include pages_list.html %}
   </ul>
   <ul class="social-links social-reveal">
-    {% if site.social.twitter %}
+    {%- if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" title="Twitter">
           <span class="icon-fallback">
@@ -15,8 +15,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.facebook %}
+    {%- endif %}
+    {%- if site.social.facebook %}
       <li>
         <a href="https://www.facebook.com/{{ site.social.facebook }}" title="Facebook">
           <span class="icon-fallback">
@@ -25,8 +25,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.github %}
+    {%- endif %}
+    {%- if site.social.github %}
       <li>
         <a href="https://github.com/{{ site.social.github }}" title="GitHub">
           <span class="icon-fallback">
@@ -35,8 +35,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.dribbble %}
+    {%- endif %}
+    {%- if site.social.dribbble %}
       <li>
         <a href="https://dribbble.com/{{ site.social.dribbble }}" title="Dribbble">
           <span class="icon-fallback">
@@ -45,8 +45,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.linkedin %}
+    {%- endif %}
+    {%- if site.social.linkedin %}
       <li>
         <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn">
           <span class="icon-fallback">
@@ -55,8 +55,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.keybase %}
+    {%- endif %}
+    {%- if site.social.keybase %}
       <li>
         <a href="https://keybase.io/{{ site.social.keybase }}" title="Keybase">
           <span class="icon-fallback">
@@ -65,8 +65,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.tox %}
+    {%- endif %}
+    {%- if site.social.tox %}
       <li>
         <a href="https://toxme.io/u/{{ site.social.tox }}" title="Tox">
           <span class="icon-fallback">
@@ -75,8 +75,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.bitcoin %}
+    {%- endif %}
+    {%- if site.social.bitcoin %}
       <li>
         <a href="{{ site.social.bitcoin }}" title="Bitcoin">
           <span class="icon-fallback">
@@ -85,8 +85,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.social.email %}
+    {%- endif %}
+    {%- if site.social.email %}
       <li>
         <a href="mailto:{{ site.social.email }}" title="Email">
           <span class="icon-fallback">
@@ -95,8 +95,8 @@
           </span>
         </a>
       </li>
-    {% endif %}
-    {% if site.rss_enabled == true %}
+    {%- endif %}
+    {%- if site.rss_enabled == true %}
       <li>
         <a href="{{ 'feed.xml' | relative_url }}" title="RSS">
           <span class="icon-fallback">
@@ -105,6 +105,6 @@
           </span>
         </a>
       </li>
-    {% endif %}
+    {%- endif %}
   </ul>
 </nav>
