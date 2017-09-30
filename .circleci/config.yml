@@ -15,12 +15,12 @@ jobs:
           paths:
             - ./node_modules
       - restore_cache:
-          key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          key: rails-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run:
           name: bundle install
           command: bundle install --path vendor/bundle
       - save_cache:
-          key: rails-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          key: rails-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
