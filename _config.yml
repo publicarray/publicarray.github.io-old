@@ -66,6 +66,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - node_modules/
+  - yarn.lock
 plugins:
   - jekyll-assets
   - jekyll-paginate
