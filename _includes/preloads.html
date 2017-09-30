@@ -1,0 +1,6 @@
+{% for preload in page.preloads %}
+  {% if preload != null %}
+    <link rel="preload" as="{{preload.as}}" href="{{preload.href}}">
+  {% endif %}
+{% endfor %}
+{% assign preload = nil %}
