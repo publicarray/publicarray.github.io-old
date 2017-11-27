@@ -6,3 +6,4 @@ _assets/bower/
 .DS_Store
 node_modules
 yarn-error.log
+*.cache

@@ -38,5 +38,5 @@ if ('serviceWorker' in navigator) {
 
 {%- if layout.style == "inline" or layout.style == "page" or layout.style == "post" %}
   {%- assign fluidboxInclude = 1 %}
-  {%- javascript fluidBox defer %}
+  {%- asset fluidBox defer %}
 {%- endif %}

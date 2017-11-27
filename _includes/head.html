@@ -25,7 +25,7 @@
   <meta property="og:image:width" content="{{ assets[page.og_image].width }}" />
   <meta property="og:image:height" content="{{ assets[page.og_image].height }}" />
   {%- else %}
-  <meta property="og:image" content="{{ site.url }}{% asset_path 1.jpg %}">
+  <meta property="og:image" content="{{ site.url }}{{ asset_path 1.jpg }}">
   <meta property="og:image:width" content="{{ assets['1.jpg'].width }}" />
   <meta property="og:image:height" content="{{ assets['1.jpg'].height }}" />
   {%- endif %}
@@ -49,6 +49,6 @@
   <meta name="msapplication-TileImage" content="mstile-144x144.png" />
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 25 blog posts" />
   {%- assign stylesheet = {{layout.style|default:"inline"}} %}
-  <style>{% asset {{stylesheet}}.scss %}</style>
-  <script>{% asset inline.js %}</script>
+  {% asset {{stylesheet}}.scss @inline %}
+  {% asset inline.js @inline %}
 </head>
