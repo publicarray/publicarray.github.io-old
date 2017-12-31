@@ -10,7 +10,7 @@ group: "navigation"
 
 {% include image.html path="dns.png" alt="DNS Statistics" width="802" height="650" %}
 
-A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://dnscrypt.org) and (experimental) [DNS-Over-TLS](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Implementation+Status) for increased security and privacy. The [Ansible playbook and configuration files are open source](https://github.com/publicarray/dns-resolver) for you to inspect at your leisure. For pretty graphs and stats see [munin generated graphs](https://dns.seby.io/stats.html)
+A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://dnscrypt.org) and (experimental) [DNS-Over-TLS](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Implementation+Status) for increased security and privacy. The [Ansible playbook and configuration files are open source](https://github.com/publicarray/dns-resolver) for you to inspect at your leisure. You can find pretty [graphs and stats generated from munin](https://dns.seby.io/stats.html) here.
 
 ### Technologies
 * [Unbound](https://www.unbound.net/) (DNS Resolver with DNSSEC)
