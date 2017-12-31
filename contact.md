@@ -13,5 +13,4 @@ Keybase: [publicarray](https://keybase.io/publicarray)
 
 Github: [publicarray](https://github.com/publicarray)
 
-
 {% include twitterjs.html %}
