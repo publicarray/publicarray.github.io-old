@@ -1,9 +1,9 @@
 .sr .reveal {
   opacity: 0;
   transition-property: all;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
-  transform: translateX(15px) scale(0.8);
+  transition-duration: 0.20s;
+  transition-timing-function: cubic-bezier(0,1.01,.15,.84);
+  transform: translateX(15px) scale(0.85);
 }
 
 .sr .reveal.visible {
@@ -15,10 +15,10 @@
   opacity: 0;
   transition-property: all;
   transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+  transition-timing-function: cubic-bezier(0,1.01,.15,.84);
   // translate(0%) -> hack to make sure that font continues to be crisp after the animation finishes.
   // thanks to: https://stackoverflow.com/questions/6411361/webkit-based-blurry-distorted-text-post-animation-via-translate3d#12383199
-  transform: translate(200px, 0%) scale(0.5);
+  transform: translate(200px, 0%) scale(0.6);
 }
 
 .sr .social-reveal.visible {

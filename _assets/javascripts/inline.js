@@ -42,7 +42,7 @@ function domReady(fn) {
 
   domReady(function () { // when Dom ready reveal elements
     var revealEls = document.getElementsByClassName('reveal');
-    reveal(revealEls, 180);
+    reveal(revealEls, 100); // delay between element animations.
 
     // animate social icons
     waitForWebfont('ionicons', function() {
@@ -106,8 +106,8 @@ function domReady(fn) {
 
         // wait for font to load and compare the width
         function checkFont() {
-           // wait for a maximum of (750 ms) 15 iterations before animation
-          if (iteration == 15 || node && node.offsetWidth != width) {
+           // wait for a maximum of (400 ms) 8 iterations before animation
+          if (iteration == 8 || node && node.offsetWidth != width) {
             callback(); // do animation even when fonts are not yet ready (use fallback text)
           }
           // Compare current width with original width
