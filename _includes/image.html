@@ -1,7 +1,7 @@
 {% if page.amp == 1 %}
 <figure>
   <amp-img
-    src="{{ asset_path }}{{ include.path }}"
+    src="{{include.path | asset:"@path" }}"
     layout="responsive"
     width="{{ assets[include.path].width }}"
     height="{{ assets[include.path].height }}"></amp-img>
@@ -9,7 +9,7 @@
 </figure>
 {% else %}
 <div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
-  <a href="{{ asset_path }}{{ include.path }} %}" class="fluidbox-trigger">
+  <a href="{{include.path | asset:"@path" }}" class="fluidbox-trigger">
     {% asset '{{ include.path }}' alt='{{ include.alt }}' class='image' %}
   </a>
 </div>

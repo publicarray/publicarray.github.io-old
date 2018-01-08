@@ -21,11 +21,11 @@
   <meta property="og:description" content="{{ page.description | default: page.content | markdownify | strip_html | strip_liquid | truncate: 300 }}">
   <meta property="og:site_name" content="{{ site.name }}">
   {%- if page.og_image != nil and page.og_image != empty %}
-  <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
+  <meta property="og:image" content="{{ page.og_image | asset:"@path" }}">
   <meta property="og:image:width" content="{{ assets[page.og_image].width }}" />
   <meta property="og:image:height" content="{{ assets[page.og_image].height }}" />
   {%- else %}
-  <meta property="og:image" content="{{ site.url }}{{ asset_path 1.jpg }}">
+  <meta property="og:image" content="{{ '1.jpg' | asset:"@path" }}">
   <meta property="og:image:width" content="{{ assets['1.jpg'].width }}" />
   <meta property="og:image:height" content="{{ assets['1.jpg'].height }}" />
   {%- endif %}

@@ -25,25 +25,24 @@ social:
 
 # https://github.com/jekyll/jekyll-assets/wiki/Configuration
 assets:
-  cache_type: memory
-  compress:
-    css: true
-    js: true
-  autoprefixer:
-    browsers:
-      - "> 0.5%"
-      - "last 2 versions"
-      - "IE > 9"
+  caching:
+    type:  memory
+    enabled: true
   sources:
     - node_modules
-    - _assets/fonts
-    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
   features:
     automatic_img_size: true
     automatic_img_alt: true
-
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  autoprefixer:
+    browsers:
+      - "> 0.5%"
+      - "last 2 versions"
+      - "IE > 9"
 # Important settings (change at own risk)
 collections:
   my_tags:
