@@ -7,6 +7,10 @@ preloads:
   - as: 'image'
     href: 'dns.png'
     asset: true
+  - as: 'font'
+    href: 'ionicons4.woff2'
+    type: 'font/woff2'
+    asset: true
 ---
 ## [Open DNS resolver](https://dns.seby.io)
 

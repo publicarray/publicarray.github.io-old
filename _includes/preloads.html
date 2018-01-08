@@ -1,10 +1,14 @@
 {%- for preload in page.preloads -%}
   {%- if preload != null %}
+    {%- if preload.type != null %}
+      {%- assign type = ' type="' | append: preload.type | append: '"' %}
+    {%- endif %}
     {%- if preload.asset != null %}
-      <link rel="preload" as="{{preload.as}}" href="{{preload.href|asset:"@path"}}">
+      <link rel="preload" as="{{preload.as}}" href="{{preload.href|asset:"@path"}}"{{type}}>
     {%- else %}
-      <link rel="preload" as="{{preload.as}}" href="{{preload.href}}">
+      <link rel="preload" as="{{preload.as}}" href="{{preload.href}}{{type}}">
     {%- endif %}
   {%- endif %}
 {%- endfor %}
 {%- assign preload = nil %}
+

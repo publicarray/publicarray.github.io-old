@@ -3,6 +3,11 @@ layout: page
 title: "Contact"
 description: "Social media accounts and places to reach me on-line 📫 . <br>Drop me a line or ask a question. I'd be delighted to hear from you."
 group: "navigation"
+preloads:
+  - as: 'font'
+    href: 'ionicons4.woff2'
+    type: 'font/woff2'
+    asset: true
 ---
 
 Twitter: <a href="https://twitter.com/messages/compose?recipient_id=765886034106351616" class="twitter-dm-button" data-screen-name="@publicarray" data-size="large">Message me @publicarray</a>
