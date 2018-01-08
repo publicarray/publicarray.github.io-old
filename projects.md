@@ -3,6 +3,10 @@ layout: page
 title: "Projects"
 description: "Here is a selected list of projects that I have worked on."
 group: "navigation"
+preloads:
+  - as: 'image'
+    href: 'dns.png'
+    asset: true
 ---
 ## [Open DNS resolver](https://dns.seby.io)
 
