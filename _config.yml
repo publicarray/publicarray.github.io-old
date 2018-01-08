@@ -23,26 +23,15 @@ social:
   keybase: publicarray
   tox: publicarray
 
-# https://github.com/jekyll/jekyll-assets/wiki/Configuration
+# https://github.com/jekyll/jekyll-assets/
+# https://github.com/rails/sprockets
 assets:
   caching:
     type:  memory
     enabled: true
   sources:
     - node_modules
-    - _assets/javascripts
-    - _assets/stylesheets
-  features:
-    automatic_img_size: true
-    automatic_img_alt: true
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}
-  autoprefixer:
-    browsers:
-      - "> 0.5%"
-      - "last 2 versions"
-      - "IE > 9"
+
 # Important settings (change at own risk)
 collections:
   my_tags:

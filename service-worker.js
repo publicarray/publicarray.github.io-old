@@ -25,8 +25,8 @@
 
     const staticAssets = [
       '/favicon.ico',
-      '/assets/fluidBox.js',
-      '/assets/ionicons4.woff2',
+      // '/assets/fluidBox.js',
+      // '/assets/ionicons4.woff2',
     ];
 
     // Store core files in a cache (including a page to display when offline)

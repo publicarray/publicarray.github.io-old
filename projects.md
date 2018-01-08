@@ -53,8 +53,6 @@ I was the backend programmer and system administrator during the development of 
 * [Bitbucket](https://bitbucket.org/)
 * and many more development tools such as git, ufw, fail2ban ...
 
-<!-- **Update** I have since moved the website to Azure so that I no longer have to maintain the server. -->
-
 ## [Solar System](https://publicarray.github.io/solarsystem/)
 
 September 2015
