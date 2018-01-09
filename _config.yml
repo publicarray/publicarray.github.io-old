@@ -26,6 +26,7 @@ social:
 # https://github.com/jekyll/jekyll-assets/
 # https://github.com/rails/sprockets
 assets:
+  digest: false
   caching:
     type:  memory
     enabled: true
