@@ -41,5 +41,27 @@
 }
 
 .twitter-dm-button {
-  vertical-align: middle;
+  // vertical-align: middle;
+  color: #ffffff;
+  background-color:#1b95e0;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 1px 10px;
+  line-height: 26px;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+
+  &:hover, &:focus, &:active {
+    color: #ffffff;
+    background-color: #0c7abf;
+  }
+
+  span.icon {
+    top: 1px;
+    position: relative;
+  }
 }
