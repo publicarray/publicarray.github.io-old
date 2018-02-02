@@ -4,8 +4,10 @@
   },
   "scripts": {
     "build": "bundle exec jekyll build",
-    "start": "bundle exec jekyll serve --incremental",
     "serve": "yarn start",
+    "start": "bundle exec jekyll serve --incremental --livereload",
+    "start-tls": "bundle exec jekyll serve -I -L --ssl-key prv.key  --ssl-cert cert.pem",
+    "gen-cert": "openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout prv.key -out cert.pem -subj '/CN=localhost' -days 999",
     "update-all": "yarn upgrade-interactive; bundle update",
     "setup": "yarn install --production; gem install bundler; bundler",
     "test": "bin/test",
