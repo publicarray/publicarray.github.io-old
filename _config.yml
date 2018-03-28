@@ -16,12 +16,12 @@ social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
   github: publicarray # Add your GitHub handle
-  linkedin: publicarray # Add your LinkedIn handle
+  # linkedin: publicarray # Add your LinkedIn handle
   twitter: publicarray # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
   keybase: publicarray
-  tox: publicarray
+  # tox: publicarray
 
 # https://github.com/jekyll/jekyll-assets/
 # https://github.com/rails/sprockets
