@@ -12,9 +12,25 @@ preloads:
     type: 'font/woff2'
     asset: true
 ---
+
+## [DNSCrypt-Proxy package for Synology](https://github.com/publicarray/spksrc/releases)
+
+April 2018
+
+{% include image.html path="syno-dnscrypt-proxy.png" alt="DNSCrypt-Proxy" width="1392" height="660" %}
+
+DNSCrypt-Proxy package for Synology NASs and Routers enables encrypted DNS for your network, custom blacklists, a DNS cache and optional logging. Credits for DNSCrypt-Proxy goto Frank Denis ([@jedisct1](https://twitter.com/jedisct1)). I merely packaged it and added a simple text editor GUI.
+
+### Technologies
+* [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy)
+* [CodeMirror](https://codemirror.net/)
+* [Go lang](https://golang.org)
+* [spksrc](https://github.com/SynoCommunity/spksrc)
+* [Synology Open Source Project](https://sourceforge.net/projects/dsgpl/)
+
 ## [Open DNS resolver](https://dns.seby.io)
 
-2017
+January 2017 - Ongoing
 
 {% include image.html path="dns.png" alt="DNS Statistics" width="802" height="650" %}
 
