@@ -34,14 +34,18 @@ January 2017 - Ongoing
 
 {% include image.html path="dns.png" alt="DNS Statistics" width="802" height="650" %}
 
-A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://github.com/DNSCrypt) and (experimental) [DNS-Over-TLS](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+-+The+Problem) for increased security and privacy. The [Ansible playbook and configuration files are open source](https://github.com/publicarray/dns-resolver) for you to inspect at your leisure. You can find pretty [graphs and stats generated from munin](https://dns.seby.io/stats.html) here.
+A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://github.com/DNSCrypt), [DNS-over-TLS](https://tools.ietf.org/html/rfc7858) and [DNS-over-HTTPS (DoH)](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https) for increased security and privacy. The [server configuration and docker files are open source](https://github.com/publicarray/dns-resolver-infra) for you to inspect at your leisure. You can find pretty [graphs and stats generated from munin](https://dns.seby.io/stats.html) here.
 
 ### Technologies
-* [Unbound](https://www.unbound.net/) (DNS Resolver with DNSSEC)
-* [NSD](https://www.nlnetlabs.nl/projects/nsd/) (for OpenNIC)
-* [dnsdist](http://dnsdist.org/) - PowerDNS (for DNSCrypt, abuse protection and statistics)
-* [Ansible](https://www.ansible.com/) (for deployment)
-* [Molecule](https://molecule.readthedocs.io/en/master/) and [Vagrant](https://www.vagrantup.com/) (for testing)
+* [Unbound](https://www.unbound.net/) DNS Resolver with DNSSEC and Query minimisation
+* [NSD](https://www.nlnetlabs.nl/projects/nsd/) for hosting a slave zone of the OpenNIC alt-root 
+* [Haproxy ](https://www.haproxy.org/) as a proxy and to terminate TLS (TLS 1.2) for DNS-over-TLS and DNS-over-HTTPS (HTTP/2)
+* [dnscrypt-wrapper](https://github.com/cofyc/dnscrypt-wrapper) for supporting the dnscrypt protocol
+* [rust-doh](https://github.com/jedisct1/rust-doh) for implementing the DNS-over-HTTPS protocol. Needs haproxy for HTTPS
+* [Docker](https://docker.com/), [Docker hub](https://hub.docker.com/u/publicarray/) and [Docker swarm](https://docs.docker.com/engine/swarm/) for packaging, isolation and deployment
+* [Alpine Linux](https://alpinelinux.org/) used as base Operating System in docker containers
+* [Kubernetes](https://kubernetes.io/) deployment, scaling, and management of docker applications
+* [Chrony](https://chrony.tuxfamily.org/) timekeeping with ntp. [The server](http://www.pool.ntp.org/user/b9nv9cqbjuhggucwvz364) is part of [ntppool.org](https://ntppool.org/)
 
 ## [map-dl](https://www.npmjs.com/package/map-dl)
 
