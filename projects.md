@@ -13,13 +13,13 @@ preloads:
     asset: true
 ---
 
-## [DNSCrypt-Proxy package for Synology](https://github.com/publicarray/spksrc/releases)
+## [dnscrypt-proxy package for Synology](https://github.com/publicarray/spksrc/releases)
 
 April 2018
 
-{% include image.html path="syno-dnscrypt-proxy.png" alt="DNSCrypt-Proxy" width="1392" height="660" %}
+{% include image.html path="syno-dnscrypt-proxy.png" alt="dnscrypt-proxy" width="1392" height="660" %}
 
-DNSCrypt-Proxy package for Synology NASs and Routers enables encrypted DNS for your network, custom blacklists, a DNS cache and optional logging. Credits for DNSCrypt-Proxy goto Frank Denis ([@jedisct1](https://twitter.com/jedisct1)). I merely packaged it and added a simple text editor GUI.
+dnscrypt-proxy package for Synology NASs and Routers enables encrypted DNS for your network, custom blacklists, a DNS cache and optional logging. Credits for dnscrypt-proxy goto Frank Denis ([@jedisct1](https://twitter.com/jedisct1)). I merely packaged it and added a simple text editor GUI.
 
 ### Technologies
 * [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy)
@@ -34,7 +34,7 @@ January 2017 - Ongoing
 
 {% include image.html path="dns.png" alt="DNS Statistics" width="802" height="650" %}
 
-A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://github.com/DNSCrypt), [DNS-over-TLS](https://tools.ietf.org/html/rfc7858) and [DNS-over-HTTPS (DoH)](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https) for increased security and privacy. The [server configuration and docker files are open source](https://github.com/publicarray/dns-resolver-infra) for you to inspect at your leisure. You can find pretty [graphs and stats generated from munin](https://dns.seby.io/stats.html) here.
+A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://dnscrypt.info/protocol), [DNS-over-TLS (DoT)](https://tools.ietf.org/html/rfc7858) and [DNS-over-HTTPS (DoH)](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https) for increased security and privacy. The [server configuration and docker files are open source](https://github.com/publicarray/dns-resolver-infra) for you to inspect at your leisure. You can find pretty [graphs and statistics generated from munin](https://dns.seby.io/stats.html) here.
 
 ### Technologies
 * [Unbound](https://www.unbound.net/) DNS Resolver with DNSSEC and Query minimisation
