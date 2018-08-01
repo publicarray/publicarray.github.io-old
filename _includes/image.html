@@ -3,12 +3,12 @@
   <amp-img
     src="{{include.path | asset:"@path" }}"
     layout="responsive"
-    width="{{ assets[include.path].width }}"
-    height="{{ assets[include.path].height }}"></amp-img>
+    width="{{ assets[include.path].dimensions.width }}"
+    height="{{ assets[include.path].dimensions.height }}"></amp-img>
   <figcaption>{{ include.alt }}</figcaption>
 </figure>
 {% else %}
-<div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].height }}/{{ assets[include.path].width }})*100%);">
+<div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].dimensions.height }}/{{ assets[include.path].dimensions.width }})*100%);">
   <a href="{{include.path | asset:"@path" }}" class="fluidbox-trigger">
     {% asset '{{ include.path }}' alt='{{ include.alt }}' class='image' %}
   </a>
