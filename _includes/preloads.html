@@ -1,11 +1,11 @@
 {%- for preload in page.preloads -%}
   {%- if preload != null %}
-    {%- if preload.as == 'font' %}{%- assign cross = 'crossorigin="crossorigin"' %}{% endif %}
+    {%- if preload.as == 'font' %}{%- assign cross = 'crossorigin="anonymous"' %}{% endif %}
     {%- if preload.type != null %}{%- assign type = ' type="' | append: preload.type | append: '"' %}{%- endif %}
     {%- if preload.asset != null %}
-      <link rel="preload" as="{{preload.as}}" href="{{preload.href|asset:"@path"}}"{{type}}{{cross}}>
+      <link rel="preload" as="{{preload.as}}" href="{{preload.href|asset:"@path"}}"{{type}} {{cross}}>
     {%- else %}
-      <link rel="preload" as="{{preload.as}}" href="{{preload.href}}"{{type}}{{cross}}>
+      <link rel="preload" as="{{preload.as}}" href="{{preload.href}}"{{type}} {{cross}}>
     {%- endif %}
   {%- endif %}
 {%- endfor %}
