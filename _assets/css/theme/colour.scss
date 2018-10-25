@@ -145,6 +145,9 @@ hr {
   background: $base-border-color;
 }
 
+.fluidbox__overlay {
+  background-color: rgba(0,0,0,.7);
+}
 .fluidbox__loader:before {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0,.9);
 }
