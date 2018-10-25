@@ -5,9 +5,11 @@
 fluidbox@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/fluidbox/-/fluidbox-2.0.5.tgz#753d2595c382b4c947adf7e1baca1bbfd2e22f94"
+  integrity sha1-dT0llcOCtMlHrffhusobv9LiL5Q=
   dependencies:
     jquery ">=1.9"
 
 jquery@>=1.9:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+  integrity sha1-XE2d5lKvbNCncBVKYxu6ErAVx4c=
