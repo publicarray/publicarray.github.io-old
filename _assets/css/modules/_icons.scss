@@ -9,6 +9,7 @@
 
 @font-face {
   font-family: ionicons;
+  font-display: optional; /* https://developers.google.com/web/updates/2016/02/font-display */
   src: url(asset_path("ionicons4.eot?#iefix")) format("embedded-opentype"), /* IE6-IE8 */
   url(asset_path("ionicons4.woff2")) format('woff2'), /* chrome, firefox, edge, iOS 10+, Android 53+ */
   url(asset_path("ionicons4.woff")) format("woff"), /* chrome, firefox, Safari, edge, IE9+, iOS, Android */

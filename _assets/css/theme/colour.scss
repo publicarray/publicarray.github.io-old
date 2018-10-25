@@ -1,0 +1,146 @@
+/*! dark-inline.css */
+
+// base.scss
+body {
+  color: $base-font-color;
+  background: $body-background;
+}
+
+h1 {
+  color: $article-header-title-color;
+}
+
+a {
+  color: $base-accent-color;
+  // transition: color $base-transition-speed linear;
+  &:hover,
+  &:active {
+    color: $base-accent-highlighted-color;
+  }
+  &:focus {
+    color: $base-accent-highlighted-color;
+  }
+}
+
+abbr {
+  border-bottom: 1px dotted $base-border-color;
+}
+
+blockquote {
+  color: $gray;
+  border-left: 3px solid $gray-dark;
+}
+// Other
+// =============================================================================
+
+hr {
+  border-bottom: 1px solid $base-border-color;
+}
+::selection {
+  color: $white;
+  background-color: $gray-darkest;
+}
+
+
+// Modules
+// embed.scss
+.header-nav {
+  border-bottom: 1px solid $base-border-color;
+}
+.header-logo {
+  color: $header-logo-color;
+  &:hover {
+    color: $header-link-color-hover;
+  }
+}
+.header-links, .social-links {
+  li a {
+    color: $header-link-color;
+    &:hover {
+      color: $header-link-color-hover;
+    }
+  }
+}
+
+// footer.scss
+.footer {
+  border-top: 1px solid $base-border-color;
+  p {
+    color: $gray-light;
+  }
+}
+
+// Articles.scss
+.article-list li {
+  border-bottom: 1px solid $base-border-color;
+  &.article-pagination {
+    a {
+      color: $gray;
+      transition: color $base-transition-speed linear;
+      &:hover {
+        color: $article-paginator-color-hover;
+      }
+    }
+  }
+}
+.article-list-item {
+  h5 {
+    color: $article-header-title-color;
+  }
+  p {
+    color: $article-header-description-color;
+  }
+}
+.article-list-footer {
+  span,
+  a {
+    color: $article-footer-color;
+  }
+  a {
+    color: $article-footer-link-color;
+    &:hover {
+      color: $article-footer-link-color-hover;
+    }
+  }
+}
+.article-empty {
+  color: $gray-light;
+}
+// Article page
+// =============================================================================
+.article-header, .page-header {
+  border-bottom: 1px solid $base-border-color;
+  p {
+    color: $article-header-description-color;
+  }
+}
+.article-content {
+  p,
+  ul,
+  ol,
+  img,
+  blockquote,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $article-post-titles-color;
+  }
+}
+.article-comments {
+  border-top: 1px solid $base-border-color;
+}
+.article-share {
+  a {
+    color: $gray-light;
+    &:hover {
+      color: $brand;
+    }
+  }
+}
+
+// embed.scss
+.image-wrapper {
+  background: $base-border-color;
+}

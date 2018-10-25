@@ -1,9 +1,9 @@
 // =============================================================================
 // 404 page
 // =============================================================================
-/*! {{ site.blog_theme }}-notfound.css */
+/*! notfound.css */
 
-@import "theme/{{ site.blog_theme }}";
+@import "theme/light";
 @import "modules/variables";
 @import "modules/mixins";
 // @import "vendor/normalize";
@@ -42,6 +42,21 @@
       color: $header-logo-color;
       &:hover {
         color: $brand;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @import "theme/dark";
+  body {
+    color: $base-font-color;
+    background: $body-background;
+  }
+  .notfound-content {
+    h1, p {
+      a {
+        color: $white;
       }
     }
   }
