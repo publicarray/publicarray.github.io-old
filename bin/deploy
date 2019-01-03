@@ -8,7 +8,7 @@ set -e
 git stash --include-untracked
 echo "Started deploying"
 # Checkout master branch.
-if [ `git branch | grep master` ]
+if git branch | grep -q master
 then
   git branch -D master
 fi
