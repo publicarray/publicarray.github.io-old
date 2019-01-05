@@ -44,7 +44,7 @@
   <meta name="application-name" content="Sebastian Schmidt"/>
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src publicarray.report-uri.com; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src publicarray.report-uri.com; font-src 'self'; img-src 'self' https://dns.seby.io; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; manifest-src 'self'; upgrade-insecure-requests; block-all-mixed-content">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 25 blog posts" />
   {%- assign stylesheet = {{layout.style|default:"inline"}} %}
   {% asset {{stylesheet}}.scss @inline %}

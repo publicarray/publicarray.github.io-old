@@ -8,10 +8,15 @@
   <figcaption>{{ include.alt }}</figcaption>
 </figure>
 {% else %}
-<div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].dimensions.height }}/{{ assets[include.path].dimensions.width }})*100%);">
-  <a href="{{include.path | asset:"@path" }}" class="fluidbox-trigger">
+  {% if include.path contains '://' %}
+  <div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ include.height }}/{{ include.width }})*100%);">
+    <a href="{{include.path}}" class="fluidbox-trigger">
+  {% else %}
+  <div class="image-wrapper {{ include.class }}" style="padding-bottom: calc(({{ assets[include.path].dimensions.height }}/{{ assets[include.path].dimensions.width }})*100%);">
+    <a href="{{include.path | asset:"@path" }}" class="fluidbox-trigger">
+  {% endif %}
     {% asset '{{ include.path }}' alt='{{ include.alt }}' class='image' %}
-  </a>
+    </a>
 </div>
 {% endif %}
 {% comment %}

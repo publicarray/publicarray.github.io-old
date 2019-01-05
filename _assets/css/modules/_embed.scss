@@ -39,6 +39,11 @@
   transition: all 1s;
   margin-bottom: 30px;
 }
+.image-wrapper img {
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+}
 
 .twitter-dm-button {
   // vertical-align: middle;
