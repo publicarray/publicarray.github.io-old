@@ -4,7 +4,7 @@ gem "autoprefixer-rails"
 gem "html-proofer"
 gem "jekyll"
 gem "mini_magick"
-gem "sass"
+gem "sassc"
 gem "uglifier"
 group :jekyll_plugins do
   gem "jekyll-assets"
