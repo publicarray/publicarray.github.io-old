@@ -24,7 +24,7 @@ dnscrypt-proxy package for Synology NASs and Routers enables encrypted DNS for y
 
 January 2017 - Ongoing
 
-{% include image.html path="https://munin.seby.io/seby.io/dns.seby.io/unbound_munin_by_rcode-year.png" alt="DNS Statistics" width="497" height="388" %}
+{% include image.html path="https://munin.seby.io/seby.io/dns.seby.io/unbound_munin_by_rcode-year.svg" alt="DNS Statistics" width="660" height="494.667" %}
 
 A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://dnscrypt.info/protocol), [DNS-over-TLS (DoT)](https://tools.ietf.org/html/rfc7858) and [DNS-over-HTTPS (DoH)](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https) for increased security and privacy. The [server configuration and docker files are open source](https://github.com/publicarray/dns-resolver-infra) for you to inspect at your leisure. You can find pretty [graphs and statistics generated from munin](https://dns.seby.io/stats.html) here.
 
