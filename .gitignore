@@ -7,3 +7,4 @@ _assets/bower/
 node_modules
 yarn-error.log
 *.cache
+_drafts/*
