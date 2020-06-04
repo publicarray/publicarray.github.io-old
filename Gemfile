@@ -3,12 +3,11 @@ source "https://rubygems.org"
 gem "autoprefixer-rails"
 gem "html-proofer"
 gem "jekyll"
-gem "sprockets", "~> 3.7"
 gem "mini_magick"
 gem "sassc"
 gem "uglifier"
 group :jekyll_plugins do
-  gem "jekyll-assets"
+  gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem 'jekyll-livereload'
