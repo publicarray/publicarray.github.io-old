@@ -81,6 +81,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.3.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     liquid (4.0.3)
     liquid-tag-parser (2.0.2)
       extras (~> 0.3)
@@ -139,6 +141,7 @@ DEPENDENCIES
   jekyll-livereload
   jekyll-paginate
   jekyll-sitemap
+  kramdown-parser-gfm
   mini_magick
   sassc
   uglifier
