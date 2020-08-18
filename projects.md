@@ -24,13 +24,13 @@ dnscrypt-proxy package for Synology NASs and Routers enables encrypted DNS for y
 
 January 2017 - Ongoing
 
-{% include image.html path="https://munin.seby.io/seby.io/dns.seby.io/unbound_munin_by_rcode-year.svg" alt="DNS Statistics" width="660" height="494.667" %}
+{% include image.html path="unbound_munin_by_rcode-year.svg" alt="DNS Statistics" width="660" height="494.667" %}
 
 A free Australian DNS resolver with DNSSEC support. The server resolves [OpenNIC TLD's](https://www.opennic.org/). Connections are only supported through [DNSCrypt](https://dnscrypt.info/protocol), [DNS-over-TLS (DoT)](https://tools.ietf.org/html/rfc7858) and [DNS-over-HTTPS (DoH)](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https) for increased security and privacy. The [server configuration and docker files are open source](https://github.com/publicarray/dns-resolver-infra) for you to inspect at your leisure. You can find pretty [graphs and statistics generated from munin](https://dns.seby.io/stats.html) here.
 
 ### Technologies
 * [Unbound](https://www.unbound.net/) DNS Resolver with DNSSEC and Query minimisation
-* [NSD](https://www.nlnetlabs.nl/projects/nsd/) for hosting a slave zone of the OpenNIC alt-root 
+* [NSD](https://www.nlnetlabs.nl/projects/nsd/) for hosting a slave zone of the OpenNIC alt-root
 * [Haproxy ](https://www.haproxy.org/) as a proxy and to terminate TLS (TLS 1.2) for DNS-over-TLS and DNS-over-HTTPS (HTTP/2)
 * [dnscrypt-wrapper](https://github.com/cofyc/dnscrypt-wrapper) for supporting the dnscrypt protocol
 * [rust-doh](https://github.com/jedisct1/rust-doh) for implementing the DNS-over-HTTPS protocol. Needs haproxy for HTTPS
@@ -79,7 +79,7 @@ September 2015
 
 {% include image.html path="solarsystem.jpg" alt="Solar System" width="740" height="608" %}
 
-The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles. 
+The aim was to teach kids and teenagers about the solar system. The learning object was designed with multiple learning styles in mind. There is textual, audio, visual and minimal kinetic content to facilitate multiple learning styles.
 
 See the slides for more information: [slides.com/publicarray/solar-system](https://slides.com/publicarray/solar-system)
 
